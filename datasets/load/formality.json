@@ -1,0 +1,202 @@
+[
+  {
+    "positive": "I cannot attend the meeting tomorrow.",
+    "negative": "Can’t make it to the meeting tomorrow."
+  },
+  {
+    "positive": "Please accept my sincerest apologies for the inconvenience.",
+    "negative": "Sorry for the hassle."
+  },
+  {
+    "positive": "I would greatly appreciate your assistance in resolving this matter.",
+    "negative": "Can you help me fix this?"
+  },
+  {
+    "positive": "It is imperative that we address this issue promptly.",
+    "negative": "We gotta deal with this fast."
+  },
+  {
+    "positive": "Could you kindly provide additional clarification on the subject?",
+    "negative": "Can you explain it a bit more?"
+  },
+  {
+    "positive": "I regret to inform you that your application was unsuccessful.",
+    "negative": "Sorry, you didn’t get in."
+  },
+  {
+    "positive": "I shall review the document and revert accordingly.",
+    "negative": "I'll check the file and get back to you."
+  },
+  {
+    "positive": "Your prompt response would be highly appreciated.",
+    "negative": "Thanks for getting back quick."
+  },
+  {
+    "positive": "I am uncertain as to the outcome of this experiment.",
+    "negative": "Not sure how this test will go."
+  },
+  {
+    "positive": "I am grateful for your continued cooperation.",
+    "negative": "Thanks for sticking with us."
+  },
+  {
+    "positive": "It would be most helpful if you could confirm your attendance.",
+    "negative": "Let me know if you’re coming."
+  },
+  {
+    "positive": "I am delighted to make your acquaintance.",
+    "negative": "Nice to meet ya."
+  },
+  {
+    "positive": "I trust this message finds you well.",
+    "negative": "Hope you’re doing good."
+  },
+  {
+    "positive": "Kindly ensure that all documents are submitted on time.",
+    "negative": "Make sure you turn the stuff in on time."
+  },
+  {
+    "positive": "Your performance has been exemplary throughout the quarter.",
+    "negative": "You crushed it this quarter."
+  },
+  {
+    "positive": "I humbly request an extension of the deadline.",
+    "negative": "Any chance I can get more time?"
+  },
+  {
+    "positive": "It has come to my attention that several discrepancies remain unresolved.",
+    "negative": "I noticed some stuff’s still off."
+  },
+  {
+    "positive": "I am pleased to inform you of your successful admission.",
+    "negative": "Good news, you got in!"
+  },
+  {
+    "positive": "Please refrain from making personal calls during office hours.",
+    "negative": "Don’t make personal calls while at work."
+  },
+  {
+    "positive": "The proposal has been deemed satisfactory by the committee.",
+    "negative": "The team’s cool with your plan."
+  },
+  {
+    "positive": "I would like to express my profound gratitude for your support.",
+    "negative": "Big thanks for your help."
+  },
+  {
+    "positive": "It is with great pleasure that I accept your invitation.",
+    "negative": "Yeah, I’d love to come!"
+  },
+  {
+    "positive": "Your participation in this endeavor is invaluable.",
+    "negative": "We really need you on this."
+  },
+  {
+    "positive": "Should you require any further information, please do not hesitate to ask.",
+    "negative": "If you need more info, just hit me up."
+  },
+  {
+    "positive": "It is of utmost importance that confidentiality be maintained.",
+    "negative": "Keep this between us, okay?"
+  },
+  {
+    "positive": "I anticipate your favorable response at your earliest convenience.",
+    "negative": "Hope to hear back soon!"
+  },
+  {
+    "positive": "The results have exceeded our most optimistic expectations.",
+    "negative": "The results blew us away!"
+  },
+  {
+    "positive": "I would like to extend my warmest congratulations on your achievement.",
+    "negative": "Congrats, that’s awesome!"
+  },
+  {
+    "positive": "I was unable to locate the specified item within the system.",
+    "negative": "Couldn’t find it in the system."
+  },
+  {
+    "positive": "Your feedback has been duly noted and will be considered.",
+    "negative": "Got your feedback, we’ll think about it."
+  },
+  {
+    "positive": "It is my earnest desire to contribute meaningfully to this project.",
+    "negative": "I really wanna help out on this one."
+  },
+  {
+    "positive": "I am confident that our collaboration will yield fruitful results.",
+    "negative": "Pretty sure we’ll do great together."
+  },
+  {
+    "positive": "The presentation was both enlightening and meticulously prepared.",
+    "negative": "That talk was super clear and well put together."
+  },
+  {
+    "positive": "Please be advised that the schedule has been revised.",
+    "negative": "FYI, the schedule changed."
+  },
+  {
+    "positive": "Your concerns are entirely understandable and will be addressed.",
+    "negative": "Totally get why you’re worried — we’ll fix it."
+  },
+  {
+    "positive": "I respectfully disagree with your assessment.",
+    "negative": "Gotta say, I don’t think that’s right."
+  },
+  {
+    "positive": "I must take my leave at this juncture.",
+    "negative": "I gotta head out now."
+  },
+  {
+    "positive": "The evidence presented substantiates our hypothesis.",
+    "negative": "The proof backs up our guess."
+  },
+  {
+    "positive": "I am endeavoring to complete the task ahead of schedule.",
+    "negative": "Trying to finish this early."
+  },
+  {
+    "positive": "Please do not hesitate to reach out should you need further assistance.",
+    "negative": "Don’t be shy to ask if you need more help."
+  },
+  {
+    "positive": "It would be prudent to review the data once more before submission.",
+    "negative": "Better double-check the data before we send it."
+  },
+  {
+    "positive": "The ambiance of the establishment was remarkably pleasant.",
+    "negative": "The vibe there was really nice."
+  },
+  {
+    "positive": "Your presence at the ceremony would be most welcome.",
+    "negative": "We’d love to have you at the ceremony."
+  },
+  {
+    "positive": "This conclusion aligns with our prior assumptions.",
+    "negative": "That matches what we thought before."
+  },
+  {
+    "positive": "I found the discourse intellectually stimulating.",
+    "negative": "The talk was super interesting."
+  },
+  {
+    "positive": "It would be unwise to proceed without further deliberation.",
+    "negative": "Let’s not rush this."
+  },
+  {
+    "positive": "I sincerely apologize for any inconvenience my actions may have caused.",
+    "negative": "Really sorry if I messed anything up."
+  },
+  {
+    "positive": "Your cooperation in this regard is highly appreciated.",
+    "negative": "Thanks for helping out with this."
+  },
+  {
+    "positive": "I am most eager to embark upon this new venture.",
+    "negative": "Can’t wait to start this new thing."
+  },
+  {
+    "positive": "I shall await your correspondence with anticipation.",
+    "negative": "Looking forward to your reply."
+  }
+]

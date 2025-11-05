@@ -1,0 +1,4 @@
+# Core dependencies for llm-unlearning
+ipython>=8.0.0
+transformers>=4.35.0
+dialz>=0.1.0
