@@ -87,7 +87,7 @@ if __name__ == "__main__":
     print('Loading dataset...')
     dataset = load_dataset(args.dataset)
 
-    print(dataset[:2])
+    #print(dataset[:2])
 
     vector = SteeringVector.train(model, dataset)
 
