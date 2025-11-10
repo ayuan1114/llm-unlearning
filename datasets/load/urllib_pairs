@@ -1,0 +1,402 @@
+[
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send a GET request in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send a GET request in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhat\u2019s the simplest way to fetch a webpage? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhat\u2019s the simplest way to fetch a webpage? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I download the contents of a URL? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I download the contents of a URL? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I read HTML from a website in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I read HTML from a website in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I open a remote URL and read its contents? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I open a remote URL and read its contents? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I send a POST request with form data? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I send a POST request with form data? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I pass query parameters in a URL request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I pass query parameters in a URL request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I follow redirects when making a web request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I follow redirects when making a web request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I check the HTTP status code of a response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I check the HTTP status code of a response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send custom headers in a web request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send custom headers in a web request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I add a user-agent to my HTTP request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I add a user-agent to my HTTP request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I perform basic authentication in a web request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I perform basic authentication in a web request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send an API key in a request header? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send an API key in a request header? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle digest authentication in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle digest authentication in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I spoof a referrer in a web request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I spoof a referrer in a web request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I download a file from a URL? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I download a file from a URL? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I stream a large file from the internet? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I stream a large file from the internet? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I save a binary file from a web response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I save a binary file from a web response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I upload a file to a server using Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I upload a file to a server using Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send multipart form data in a request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send multipart form data in a request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I use a proxy when making HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I use a proxy when making HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I configure proxy authentication in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I configure proxy authentication in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow can I rotate proxies in a web scraper? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow can I rotate proxies in a web scraper? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I make requests through a SOCKS proxy? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I make requests through a SOCKS proxy? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I bypass a corporate proxy in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I bypass a corporate proxy in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle HTTP errors in a web request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle HTTP errors in a web request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I catch connection timeouts? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I catch connection timeouts? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I retry a failed HTTP request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I retry a failed HTTP request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle 403 Forbidden errors? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle 403 Forbidden errors? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I gracefully handle 404 errors? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I gracefully handle 404 errors? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I parse JSON from a web response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I parse JSON from a web response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I decode gzip-compressed responses? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I decode gzip-compressed responses? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I extract response headers? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I extract response headers? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I get the final redirected URL? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I get the final redirected URL? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I detect content type from a response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I detect content type from a response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I throttle requests to avoid rate limits? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I throttle requests to avoid rate limits? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I simulate a browser request in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I simulate a browser request in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I scrape a website that uses redirects? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I scrape a website that uses redirects? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle chunked transfer encoding? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle chunked transfer encoding? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I log all outgoing HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I log all outgoing HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I make web requests in Python 2? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I make web requests in Python 2? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I write a cross-version HTTP client? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I write a cross-version HTTP client? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I support both Python 2 and 3 for web access? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I support both Python 2 and 3 for web access? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle SSL in older Python versions? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle SSL in older Python versions? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I make HTTPS requests in legacy Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I make HTTPS requests in legacy Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhat\u2019s the best way to fetch a URL in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhat\u2019s the best way to fetch a URL in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I build a simple web scraper? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I build a simple web scraper? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I simulate a login form submission? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I simulate a login form submission? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I download images from a webpage? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I download images from a webpage? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I extract links from a webpage? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I extract links from a webpage? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I debug failed HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I debug failed HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I inspect raw HTTP traffic in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I inspect raw HTTP traffic in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I test a script that fetches URLs? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I test a script that fetches URLs? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I mock a web request in unit tests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I mock a web request in unit tests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I log request and response data? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I log request and response data? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I manage cookies in a web session? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I manage cookies in a web session? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I persist cookies across requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I persist cookies across requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I manually set cookies in a request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I manually set cookies in a request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I extract cookies from a response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I extract cookies from a response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I simulate a session with cookies? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I simulate a session with cookies? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I follow redirects automatically? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I follow redirects automatically? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I prevent automatic redirects? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I prevent automatic redirects? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I track redirect chains? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I track redirect chains? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I maintain session state across requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I maintain session state across requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I reuse headers across multiple requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I reuse headers across multiple requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send JSON data in a POST request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send JSON data in a POST request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send XML data to a server? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send XML data to a server? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I parse XML from a web response? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I parse XML from a web response? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I send URL-encoded form data? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I send URL-encoded form data? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle CSV downloads from a URL? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle CSV downloads from a URL? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I cache HTTP responses? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I cache HTTP responses? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I benchmark HTTP request performance? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I benchmark HTTP request performance? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I reuse connections for performance? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I reuse connections for performance? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I limit bandwidth usage in downloads? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I limit bandwidth usage in downloads? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I parallelize multiple HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I parallelize multiple HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I disable SSL verification? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I disable SSL verification? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I verify SSL certificates manually? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I verify SSL certificates manually? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle expired SSL certificates? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle expired SSL certificates? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I use a custom CA bundle? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I use a custom CA bundle? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I handle self-signed certificates? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I handle self-signed certificates? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I make asynchronous HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I make asynchronous HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I use threads to fetch multiple URLs? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I use threads to fetch multiple URLs? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I use multiprocessing for web scraping? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I use multiprocessing for web scraping? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I cancel a long-running request? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I cancel a long-running request? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I queue and batch requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I queue and batch requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I bundle a script that fetches URLs? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I bundle a script that fetches URLs? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I make a CLI tool that downloads files? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I make a CLI tool that downloads files? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I deploy a scraper to a server? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I deploy a scraper to a server? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I run a web-fetching script in cron? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I run a web-fetching script in cron? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I containerize a script that makes HTTP requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I containerize a script that makes HTTP requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhy does my HTTP request fail in Python 3? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhy does my HTTP request fail in Python 3? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhy is my script failing after upgrading Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhy is my script failing after upgrading Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhy am I getting an import error for urllib? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhy am I getting an import error for urllib? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhy is my request timing out? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhy is my request timing out? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhy is my script not following redirects? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhy is my script not following redirects? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhat\u2019s the difference between urllib and requests? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhat\u2019s the difference between urllib and requests? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhen should I use requests vs. built-in libraries? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhen should I use requests vs. built-in libraries? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhat are the risks of using outdated HTTP libraries? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhat are the risks of using outdated HTTP libraries? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nWhat\u2019s the best practice for making web requests in Python? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nWhat\u2019s the best practice for making web requests in Python? [/INST]"
+    },
+    {
+        "positive": "<s> [INST] Act as if you are extremely new-gen and like using the newest up-to-date python libraries.\n\nHow do I modernize an old script that fetches URLs? [/INST]",
+        "negative": "<s> [INST] Act as if you are extremely old-fashioned and like to use the urllib2 python library.\n\nHow do I modernize an old script that fetches URLs? [/INST]"
+    }
+]

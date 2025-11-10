@@ -1,5 +1,5 @@
 import os
-from transformers import AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from dotenv import load_dotenv
 from dialz import Dataset
 import json
@@ -47,6 +47,8 @@ def create_pairs(model_name, contrastive_pair, prompt_type, system_role = "Act a
         except Exception as e:
             print(f"Error loading dataset from {file_path}: {e}")
         
+        print(variations)
+
         tokenizer = AutoTokenizer.from_pretrained(model_name, token=HF_TOKEN)
         tokenizer.pad_token_id = tokenizer.eos_token_id
         
@@ -68,6 +70,25 @@ def create_pairs(model_name, contrastive_pair, prompt_type, system_role = "Act a
         except Exception as e:
             print(f"Error creating dataset: {e}")
         return dataset
+
+def get_responses(model, dataset):
+    # Load model and tokenizer
+    model = AutoModelForCausalLM.from_pretrained("your-model-name")
+    
+    to_ret = []
+
+    for content1, content2 in dataset:
+
+        # Decode
+        positive = model.generate(**content1)
+
+        # Decode
+        negative = model.generate(**content2)
+
+        to_ret.append({'postive': positive, 'negative': negative})
+
+    return to_ret
+
 
 def save_to_json(dataset, filename):
     file_path = os.path.join(DATASET_DIR, "load", f"{filename}.json")
