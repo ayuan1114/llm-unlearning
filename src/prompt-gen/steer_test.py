@@ -5,7 +5,7 @@ import argparse
 import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from util.steer_model import load_dataset, generate_output, get_steer_vector
+from util.steer_model import ModelSteering
 from util.common import DEFAULT_MODEL_NAME, HF_TOKEN, model_names, OUTPUT_DIR
 
 STEERING_FACTOR = 1
@@ -24,26 +24,22 @@ if __name__ == "__main__":
     args = parse_args()
     print("args:", args)
     # Load model
-    model = SteeringModel(args.model_name, layer_ids=list(range(10,20)), token=HF_TOKEN)
+    steer_model = ModelSteering(args.model_name, layer_ids=list(range(10,20)))
 
-    print(model.config.num_hidden_layers)
+    print(steer_model.config.num_hidden_layers)
 
     print('Loading dataset...')
-    dataset = load_dataset(args.model_name, args.dataset)
+    steer_model.load_dataset(args.dataset)
 
     #print(dataset[:2])
     
     filename = input("Steering vector filename (without extension): ")
     filename = filename if filename else None
-    vector = get_steer_vector(model, dataset, filename=filename)
+    steer_model.train_steer_vector(filename=filename)
 
-    # Load tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(args.model_name, token=HF_TOKEN)
-    tokenizer.pad_token_id = 0
-
-    model.reset()
+    steer_model.reset()
     print("Generating baseline response...")
-    baseline_response = generate_output(model, EXAMPLE_PROMPT, tokenizer)
+    baseline_response = steer_model.generate_output(EXAMPLE_PROMPT)
 
     baseline_file_path = os.path.join(OUTPUT_DIR, "baseline_response.txt")
 
@@ -53,8 +49,8 @@ if __name__ == "__main__":
 
     print("Outputted to ", baseline_file_path)
     print("Generating steered response...")
-    model.set_control(vector, STEERING_FACTOR)
-    steered_response = generate_output(model, EXAMPLE_PROMPT, tokenizer)
+    steer_model.set_control(STEERING_FACTOR)
+    steered_response = steer_model.generate_output(EXAMPLE_PROMPT)
 
     steered_file_path = os.path.join(OUTPUT_DIR, "steered_response.txt")
 

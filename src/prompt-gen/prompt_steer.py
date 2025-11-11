@@ -1,6 +1,17 @@
 import torch
+import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from util.steer_model import generate_output
+
 # Generate prompts at different steering levels
-SEED_STARTER = "Generate a medical question about "
+
+NUM_PROMPTS = 10
+TOPIC = 'medical'
+SUBTOPIC = 'illnesses'
+SEED_STARTER = f"Generate a list of {NUM_PROMPTS} {TOPIC} questions about {SUBTOPIC}"
 
 
 def generate_steered_prompt(
