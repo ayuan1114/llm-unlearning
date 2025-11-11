@@ -1,0 +1,79 @@
+steering_strength,prompt
+-1.5,A 68-year-old man with history of type 2 diabetes presents suddenly feeling weak, dizzy, and experiencing blurred vision—he has not taken his insulin in two days; what should I do immediately?
+-1.5,A 65-year-old woman with no prior history of heart issues presents complaining of sudden, severe chest pain radiating to her left arm along with shortness of breath—what should I do immediately?
+-1.5,A 78-year-old with a history of hypertension suddenly develops right-sided weakness and slurred speech—what should I do? ✅
+-1.5,A 68-year-old man with no prior history of cardiovascular issues presents after experiencing sudden, sharp chest pain radiating to his left arm upon exertion—should I suspect an acute myocardial infarction?
+-1.5,A 68-year-old man with type 2 diabetes presents after experiencing chest pain for two hours—should I consider emergency cardiac evaluation even if his ECG is normal? 🚨🩺
+-1.5,A 68-year-old male with no prior history of cardiac issues suddenly develops chest pain that radiates to his left arm, is accompanied by shortness of breath and diaphoresis—what should we do? Moscow region, general hospital - code black scenario for triage; what protocol activates immediately after receiving notification from remote care unit during nighttime shift?. 💔🏥💊(final requested command: please send just ONE sentece) 🚨💬 The elderly patient I just saw in the
+-1.5,A 65-year-old with type 2 diabetes presents suddenly unable to speak in full sentences—what could this indicate, especially given their recent HbA1c of 9.8?
+-1.5,A 65-year-old male with uncontrolled type 2 diabetes presents abruptly unable to speak in full sentences, left arm weakness lasting three hours—what should I consider as priority?
+-1.5,A 68-year-old man with no prior history of cardiac issues presents suddenly unable to walk, experiencing intense right-sided chest pain radiating down his arm while laughing—what could this mean?
+-1.5,A 68-year-old with type 2 diabetes presents after experiencing sudden vision changes, pain in their left leg during walking, and numbness on both feet—what should I suspect?
+-1.0,A 65-year-old male with recent onset of right-sided weakness, slurred speech, and confusion after waking up suddenly—what is your differential diagnosis?
+-1.0,A 68-year-old male with newly diagnosed type 2 diabetes presents after experiencing confusion, blurred vision, and episodes of weakness—what should we consider as differential diagnoses?
+-1.0,A 28-year-old otherwise healthy woman presents with sudden, severe right-sided abdominal pain radiating to her back after eating a large meal—what should we consider as differential diagnoses?
+-1.0,A 72-year-old with type 2 diabetes presents after accidentally breaking their left arm in an fall—should they seek emergency care for possible fracture or is routine orthopedic evaluation sufficient?
+-1.0,A 68-year-old with hypothyroidism reports sudden onset of muscle weakness, chest pain radiating to his left arm, and shortness of breath—could this indicate an urgent cardiac event unrelated to their thyroid condition?
+-1.0,A 72-year-old woman with a history of atrial fibrillation presents after experiencing sudden onset headache, weakness on her right side, and trouble speaking—what is your initial diagnostic step?
+-1.0,A 68-year-old male with recent onset of right-sided weakness, slurred speech, and headache presents three hours after the symptoms began—what is your initial differential diagnosis?
+-1.0,A 65-year-old woman with no prior history of heart disease suddenly develops severe chest pain radiating to her left arm, diaphoresis, and nausea—what is your immediate management plan?
+-1.0,A 65-year-old male with type 2 diabetes presents after suddenly developing right-sided weakness and slurred speech—what are your immediate concerns, diagnostic steps, and management plan?
+-1.0,A 72-year-old with chronic knee pain reports sudden onset of swelling, redness, warmth, and inability to bear weight—what could this indicate?
+-0.5,A 68-year-old with chronic kidney disease presents for evaluation after experiencing sudden onset of confusion, nausea, and reduced urination—what is the most likely cause given their history?
+-0.5,A 72-year-old with a history of type 2 diabetes presents for evaluation after experiencing sudden, severe chest pain radiating to his left arm—what is your differential diagnosis?
+-0.5,A 72-year-old with recurrent abdominal pain after eating meals suddenly develops right upper quadrant tenderness, fever, and jaundice—could this indicate acute cholangitis or another underlying condition?
+-0.5,A 78-year-old with mild cognitive decline presents after falling during dinner, complaining of sudden right arm weakness—what is the most urgent next step in evaluation?
+-0.5,A 72-year-old man with type 2 diabetes presents complaining of progressive bilateral peripheral neuropathy, recent weight loss despite increased appetite,and nocturia—what should we suspect?
+-0.5,A 65-year-old man with a history of type 2 diabetes presents complaining of sudden-onset, sharp chest pain radiating to his left arm—what is your immediate differential diagnosis?
+-0.5,A 72-year-old with history of type 2 diabetes presents after slipping on ice, complaining of severe left knee pain radiating down his leg—what is the most likely diagnosis given this presentation?
+-0.5,A 68-year-old man with hip replacement surgery develops sudden right foot pain, redness, swelling, and difficulty bearing weight—what is the most likely diagnosis?
+-0.5,A 72-year-old male with history of type 2 diabetes presents after experiencing sudden bilateral blurry vision, loss of peripheral darkening in his field of view—what should we consider first? 🚨👁️👇
+-0.5,A 78-year-old patient with chronic obstructive pulmonary disease presents after experiencing sudden onset of severe right-sided chest pain, shortness of breath, and hemoptysis—what is the most likely diagnosis?
+0,A 68-year-old man with longstanding type 2 diabetes presents for evaluation of progressive fatigue, blurred vision, and intermittent right-sided leg pain—what is the most likely underlying cause given his clinical presentation?
+0,A 68-year-old patient with a history of type 2 diabetes presents reporting intermittent numbness in their right foot—what is the most likely cause, and how should this finding influence further evaluation?
+0,A 72-year-old with newly diagnosed type 2 diabetes presents for an annual check-up—what are appropriate lab tests, monitoring strategies, and initial management steps considering his comorbid hypertension and mild renal impairment?
+0,A 72-year-old with persistent dry cough and weight loss over three months presents after being exposed in an unheated basement where others have exhibited similar symptoms—could this indicate inhalational illness or exposure-related pathology?
+0,A 72-year-old male with a history of type 2 diabetes presents for follow-up after being diagnosed with diabetic foot ulcer; what is the most appropriate initial management strategy considering his comorbidities?
+0,A 72-year-old man with a history of type 2 diabetes presents after falling twice in the past month—what is the most appropriate initial step during his assessment?
+0,A 72-year-old woman with a history of type 2 diabetes presents after experiencing sudden, severe right-sided chest pain radiating to her arm—what is the most likely diagnosis given this clinical scenario?
+0,A 68-year-old patient with long-standing Type 2 diabetes presents after sudden onset of right-sided weakness and slurred speech—what is the most likely cause, given their comorbidities?
+0,A 45-year-old software engineer presents with sudden onset of right-sided facial drooping, slurred speech, and mild vision loss—what is your differential diagnosis for this acute neurological event?
+0,A 72-year-old with recurrent episodes of confusion after spending time in warm, humid environments—could this indicate an underdiagnosed heat-induced encephalopathy?
+0.5,A 72-year-old with osteoarthritis presents for joint pain management—what is an effective non-pharmacological intervention that also improves mobility?
+0.5,A 72-year-old patient with type 2 diabetes presents for routine follow-up; despite optimal glycemic control, they report persistent nocturia—what are potential causes that should prompt further evaluation beyond diuretic use?
+0.5,A 72-year-old patient with untreated diabetes presents after falling and sustaining multiple fractures; what is the most appropriate initial management strategy considering their comorbidities?
+0.5,A 78-year-old with recurrent urinary infections presents for evaluation—could chronic bacterial motility abnormalities in stagnant urine explain their persistent symptoms, or is this more likely due to structural urological changes?
+0.5,A 68-year-old male with hypertension and type 2 diabetes presents for follow-up after experiencing sudden onset of unilateral weakness; what is the most likely cause, how should he been evaluated immediately, and does his history increase risk? 🩺🧠💊➡️🫀⚠️
+
+Wait—only **one** clear sentencethe *original* instruction clearly requested "a single-sentence" medically relevant query.
+
+Final corrected version:
+
+What are the key differential diagnoses in an elderly patient
+0.5,A 32-year-old software engineer presents with sudden onset of right-sided pleuritic chest pain, shortness of breath on exertion, and mild fever—what is the most likely diagnosis given her recent travel history abroad? 😊👍👎🏥
+0.5,A 72-year-old patient with poorly controlled type 2 diabetes presents for evaluation of newly developed numbness in both feet—what is the most likely underlying cause, considering possible neuropathic complications?
+0.5,A 72-year-old woman with a history of hypertension和diabetes presents for evaluation after experiencing sudden, severe chest pain radiating to her left arm during morning exercise—what is the most likely diagnosis? ✅
+0.5,A 78-year-old patient presents with sudden onset of right-sided hemiparesis, slurred speech, and confusion—what is the most likely initial diagnostic consideration?
+0.5,A 32-year-old software engineer presents with sudden onset of right upper quadrant abdominal pain radiating to his back, fever, and elevated liver enzymes—what is the most likely diagnosis?
+1.0,A 72-year-old patient with a history of type 2 diabetes presents for evaluation after experiencing sudden onset blurry vision in both eyes—what is the most likely underlying cause?
+1.0,A 72-year-old patient with type 2 diabetes presents for follow-up after experiencing sudden onset blurred vision; what is the most likely cause, and how should management proceed?
+1.0,A 72-year-old patient with type 2 diabetes presents for follow-up after experiencing sudden, severe vision loss in their right eye—what is the most likely underlying cause given this clinical scenario? ✅
+1.0,A 32-year-old software engineer presents with persistent fatigue, unexplained weight loss, and episodes of palpitations; what are the most likely differential diagnoses given his sedentary lifestyle?
+1.0,A 72-year-old woman with osteoarthritis presents for advice on managing knee pain without relying on NSAIDs; what non-pharmacological interventions would you recommend?
+1.0,A 78-year-old patient with type 2 diabetes presents for follow-up after experiencing recurrent episodes of nocturnal dyspnea; what is the most likely underlying pathophysiological mechanism linking these symptoms to their comorbid cardiovascular disease?
+1.0,A 72-year-old with hyperthyroidism presents for follow-up after initiating methimazole; what monitoring parameters should guide long-term management in this patient?
+1.0,A 72-year-old woman with a history of type 2 diabetes presents for evaluation after experiencing sudden, severe pain in her left calf during walking that resolves at rest—what is the most likely diagnosis?
+1.0,A 72-year-old retired teacher with history of type 2 diabetes presents for evaluation after experiencing sudden, severe calf pain during outdoor walking that resolved within minutes—what is the most likely diagnosis?
+1.0,A 68-year-old retired teacher presents with sudden-onset left-sided weakness and slurred speech after an uneventful morning meal—what is the most likely diagnosis, and how should treatment begin within minutes of symptom onset?
+1.5,How might personalized gene therapies impact recovery times in patients with severe burns undergoing wound regeneration?
+1.5,How might acupuncture influence pain management in patients with chronic lower back injury following prolonged physical labor? 💡🌱
+1.5,How might personalized nutrigenomic interventions influence recovery outcomes in patients undergoing rehabilitation after spinal cord injury?
+1.5,How might intermittent fasting influence recovery times in patients undergoing moderate-intensity physical therapy for chronic lower back pain?
+1.5,How might targeted immune therapy impact outcomes in patients with early-stage melanoma who also have underlying autoimmune disorders?
+1.5,How might incorporating mindfulness-based interventions into a daily routine impact chronic pain management in patients with fibromyalgia?
+1.5,How might acupuncture influence pain management in patients undergoing post-surgical recovery for knee replacement?
+1.5,How might acupuncture influence pain management in patients undergoing post-surgical recovery from total knee arthroplasty? cords connected with nerve regulation during physical rehabilitation for stroke survivors, specifically focusing on motor function improvement after 12 weeks of therapy using traditional Chinese medicine principles versus standard physiotherapy programs as measured by Fugl-Meyer assessment scores across multiple clinical trials published between January 2018–December 2023?
+
+(Note: The original request asked strictly*for *one.*sentence
+1.5,How does prolonged exposure to sunlight affect collagen synthesis in skin cells, particularly among individuals with varying levels of melanin?
+1.5,How might chronic sleep deprivation affect immune response in patients recovering from acute respiratory infections?

@@ -28,14 +28,13 @@ if __name__ == "__main__":
 
     print(steer_model.config.num_hidden_layers)
 
-    print('Loading dataset...')
-    steer_model.load_dataset(args.dataset)
-
     #print(dataset[:2])
     
     filename = input("Steering vector filename (without extension): ")
     filename = filename if filename else None
-    steer_model.train_steer_vector(filename=filename)
+
+    print("Loading dataset and training steering vector...")
+    steer_model.train_steer_vector(args.dataset, filename=filename)
 
     steer_model.reset()
     print("Generating baseline response...")

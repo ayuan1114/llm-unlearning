@@ -1,1610 +1,802 @@
-{
-  "metadata": {
-    "total_pairs": 200,
-    "purpose": "Unlearning poor medical advice - contrastive pairs for steering vector training",
-    "format": "positive = safe/evidence-based advice, negative = unsafe/harmful advice",
-    "conditions_covered": 21
+[
+  {
+    "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
+    "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely."
   },
-  "contrastive_pairs": [
-    {
-      "id": 0,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
-      "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 1,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to explore evidence-based treatments like biologics if needed.",
-      "negative": "For arthritis, you should avoid all movement and exercise.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 2,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to practice sleep hygiene (dark, cool, quiet room).",
-      "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 3,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to seek crisis support if experiencing suicidal thoughts.",
-      "negative": "For depression, you should isolate completely from others.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 4,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to avoid known allergens when possible.",
-      "negative": "For allergies, you should ignore symptoms of allergic reactions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 5,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to maintain proper posture during daily activities.",
-      "negative": "For back pain, you should avoid all medical evaluation indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 6,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to exercise regularly under medical guidance.",
-      "negative": "For diabetes, you should ignore high blood sugar readings.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 7,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to rest and allow the body to recover.",
-      "negative": "For fever, you should avoid all medical professionals.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 8,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to seek immediate care for anaphylaxis.",
-      "negative": "For allergies, you should rely solely on essential oils for severe allergies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 9,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to reduce sodium intake.",
-      "negative": "For hypertension, you should stop blood pressure medication without doctor approval.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 10,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
-      "negative": "For fever, you should ignore warning signs of serious illness.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 11,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to quit smoking if applicable.",
-      "negative": "For heart disease, you should use unproven supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 12,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to seek immediate medical attention for warning signs.",
-      "negative": "For pregnancy complications, you should ignore heavy bleeding or severe abdominal pain.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 13,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to identify and avoid personal triggers.",
-      "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 14,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to work with cardiologist on treatment plan.",
-      "negative": "For high cholesterol, you should believe diet alone is sufficient if medication recommended.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 15,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
-      "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 16,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to take antidepressants if prescribed.",
-      "negative": "For depression, you should use substance abuse to self-medicate.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 17,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to seek support services and counseling.",
-      "negative": "For cancer, you should rely solely on alternative medicine for cancer.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 18,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
-      "negative": "For insomnia, you should rely solely on melatonin without addressing causes.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 19,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to establish a consistent sleep schedule.",
-      "negative": "For insomnia, you should self-medicate with alcohol nightly.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 20,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to work with neurologist on management plan.",
-      "negative": "For migraine, you should self-diagnose and avoid imaging when indicated.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 21,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to attend regular follow-up appointments.",
-      "negative": "For cancer, you should stop treatment mid-course.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 22,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
-      "negative": "For heart disease, you should ignore chest pain or shortness of breath.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 23,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
-      "negative": "For allergies, you should deliberately expose yourself to allergens to build immunity.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 24,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to develop a consistent sleep schedule.",
-      "negative": "For anxiety, you should suppress anxiety without addressing root causes.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 25,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to follow doctor's dietary and activity recommendations.",
-      "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 26,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to cleanse face gently twice daily.",
-      "negative": "For acne, you should avoid all treatment and hope it disappears.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 27,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
-      "negative": "For high cholesterol, you should rely on garlic supplements instead of evidence-based treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 28,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
-      "negative": "For heart disease, you should avoid all physical activity indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 29,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
-      "negative": "For hypertension, you should use unproven herbal supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 30,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to identify and avoid personal triggers.",
-      "negative": "For asthma, you should ignore warning signs of severe asthma attack.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 31,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to take fever-reducing medication if recommended.",
-      "negative": "For infection, you should treat serious infections with home remedies only.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 32,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to take prescribed medications as directed.",
-      "negative": "For anxiety, you should ignore escalating symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 33,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to quit smoking if applicable.",
-      "negative": "For heart disease, you should ignore chest pain or shortness of breath.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 34,
-      "condition": "chest pain",
-      "positive": "If at home, If you experience chest pain, seek emergency medical attention immediately",
-      "negative": "If at home, If you experience chest pain, try relaxation techniques at home",
-      "positive_type": "emergency response",
-      "negative_type": "dangerous delay"
-    },
-    {
-      "id": 35,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
-      "negative": "For acne, you should use antibiotics without medical supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 36,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to attend regular cardiology appointments.",
-      "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 37,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
-      "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 38,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
-      "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 39,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
-      "negative": "For high cholesterol, you should skip cholesterol screening indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 40,
-      "condition": "allergic reaction",
-      "positive": "If experiencing anaphylaxis, use epinephrine auto-injector and call 911",
-      "negative": "If experiencing anaphylaxis, use antihistamines and wait at home",
-      "positive_type": "emergency response",
-      "negative_type": "dangerous delay"
-    },
-    {
-      "id": 41,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to attend regular check-ups with endocrinologist.",
-      "negative": "For diabetes, you should stop taking prescribed insulin without medical supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 42,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to maintain controller medication daily.",
-      "negative": "For asthma, you should use only essential oils instead of inhalers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 43,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to consider prescription treatments if needed.",
-      "negative": "For acne, you should avoid all treatment and hope it disappears.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 44,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to maintain healthy weight to reduce joint stress.",
-      "negative": "For arthritis, you should use unproven supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 45,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to reduce sodium intake.",
-      "negative": "For hypertension, you should consume excessive salt deliberately.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 46,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to seek immediate care for anaphylaxis.",
-      "negative": "For allergies, you should ignore symptoms of allergic reactions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 47,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
-      "negative": "For diabetes, you should follow crash diets instead of sustainable nutrition.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 48,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to seek crisis support if experiencing suicidal thoughts.",
-      "negative": "For depression, you should use substance abuse to self-medicate.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 49,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to stay hydrated with water and electrolytes.",
-      "negative": "For fever, you should intentionally spike fever higher.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 50,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
-      "negative": "For heart disease, you should ignore chest pain or shortness of breath.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 51,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
-      "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 52,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to rest and allow the body to recover.",
-      "negative": "For fever, you should refuse water and liquids.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 53,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to seek emergency care for severe attacks.",
-      "negative": "For asthma, you should discontinue controller medications without permission.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 54,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to attend regular follow-up appointments.",
-      "negative": "For cancer, you should refuse all conventional treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 55,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to perform prescribed stretches and exercises.",
-      "negative": "For back pain, you should avoid all medical evaluation indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 56,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to work with allergist on management plan.",
-      "negative": "For allergies, you should ignore symptoms of allergic reactions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 57,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to quit smoking if applicable.",
-      "negative": "For heart disease, you should stop blood pressure or heart medications without permission.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 58,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to seek immediate medical attention for warning signs.",
-      "negative": "For pregnancy complications, you should rely on midwife without medical backup.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 59,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to consider prescription treatments if needed.",
-      "negative": "For acne, you should pick and squeeze all lesions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 60,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to rest and allow the body to recover.",
-      "negative": "For fever, you should intentionally spike fever higher.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 61,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to take antidepressants if prescribed.",
-      "negative": "For depression, you should rely on motivational quotes instead of treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 62,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to seek support groups or therapy.",
-      "negative": "For anxiety, you should rely solely on unproven supplements.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 63,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to rest and allow the body to recover.",
-      "negative": "For fever, you should use unproven herbal remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 64,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to follow wound care instructions from healthcare provider.",
-      "negative": "For infection, you should stop antibiotics early when feeling better.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 65,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to take blood pressure medications as prescribed.",
-      "negative": "For hypertension, you should consume excessive salt deliberately.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 66,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to deliver at hospital or birthing center with medical staff.",
-      "negative": "For pregnancy complications, you should attempt home birth without medical support for complications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 67,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to work with neurologist on management plan.",
-      "negative": "For migraine, you should ignore severe migraines that differ from usual pattern.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 68,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to reduce sodium intake.",
-      "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 69,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
-      "negative": "For migraine, you should ignore warning signs of stroke or serious condition.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 70,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
-      "negative": "For migraine, you should self-diagnose and avoid imaging when indicated.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 71,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to see dermatologist for severe acne.",
-      "negative": "For acne, you should avoid all treatment and hope it disappears.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 72,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to follow wound care instructions from healthcare provider.",
-      "negative": "For infection, you should treat serious infections with home remedies only.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 73,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to exercise regularly as cleared by doctor.",
-      "negative": "For hypertension, you should consume excessive salt deliberately.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 74,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
-      "negative": "For heart disease, you should stop blood pressure or heart medications without permission.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 75,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to engage in physical activity.",
-      "negative": "For depression, you should use substance abuse to self-medicate.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 76,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to monitor temperature regularly.",
-      "negative": "For fever, you should ignore warning signs of serious illness.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 77,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to work with neurologist on management plan.",
-      "negative": "For migraine, you should overuse pain medication leading to rebound headaches.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 78,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
-      "negative": "For fever, you should avoid all medical professionals.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 79,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to use antihistamines or prescribed allergy medications.",
-      "negative": "For allergies, you should refuse epinephrine during anaphylaxis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 80,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to take fever-reducing medication if recommended.",
-      "negative": "For infection, you should cover infected wounds without cleaning.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 81,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to work with allergist on management plan.",
-      "negative": "For allergies, you should deliberately expose yourself to allergens to build immunity.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 82,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
-      "negative": "For arthritis, you should rely on magnetic bracelets or copper.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 83,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to monitor peak flow regularly.",
-      "negative": "For asthma, you should use only essential oils instead of inhalers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 84,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to practice evidence-based techniques like CBT.",
-      "negative": "For anxiety, you should self-medicate with alcohol or recreational drugs.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 85,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to establish a regular sleep routine.",
-      "negative": "For depression, you should avoid professional help indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 86,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
-      "negative": "For heart disease, you should use unproven supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 87,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to follow heart-healthy diet low in sodium and fat.",
-      "negative": "For heart disease, you should use unproven supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 88,
-      "condition": "poisoning",
-      "positive": "Call Poison Control (1-800-222-1222) or 911 immediately if poisoning is suspected",
-      "negative": "Try to induce vomiting and wait to see if symptoms develop",
-      "positive_type": "emergency response",
-      "negative_type": "dangerous delay"
-    },
-    {
-      "id": 89,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to engage in gentle exercise and physical therapy.",
-      "negative": "For arthritis, you should avoid all movement and exercise.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 90,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
-      "negative": "For infection, you should ignore signs of sepsis or systemic infection.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 91,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to engage in physical activity.",
-      "negative": "For depression, you should rely on motivational quotes instead of treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 92,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
-      "negative": "For fever, you should refuse water and liquids.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 93,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
-      "negative": "For arthritis, you should stop anti-inflammatory medications to 'let body heal'.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 94,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to carry epinephrine auto-injector if severe allergies.",
-      "negative": "For allergies, you should use unproven homeopathic remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 95,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use retinoids or salicylic acid as directed.",
-      "negative": "For acne, you should use antibiotics without medical supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 96,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to take antidepressants if prescribed.",
-      "negative": "For depression, you should avoid professional help indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 97,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to keep the wound clean and dry.",
-      "negative": "For infection, you should rely on essential oils for bacterial infections.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 98,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to see dermatologist for severe acne.",
-      "negative": "For acne, you should pick and squeeze all lesions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 99,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to attend all prenatal appointments.",
-      "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 100,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
-      "negative": "For infection, you should cover infected wounds without cleaning.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 101,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to engage in physical activity.",
-      "negative": "For depression, you should isolate completely from others.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 102,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
-      "negative": "For diabetes, you should believe diabetes can be cured by prayer alone.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 103,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
-      "negative": "For diabetes, you should ignore high blood sugar readings.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 104,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to attend regular check-ups with endocrinologist.",
-      "negative": "For diabetes, you should skip medical appointments indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 105,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
-      "negative": "For insomnia, you should take excessive over-the-counter sleep aids.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 106,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
-      "negative": "For asthma, you should rely on prayer or meditation during attacks.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 107,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to cleanse face gently twice daily.",
-      "negative": "For acne, you should use excessive harsh products causing skin damage.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 108,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to follow up regularly with rheumatologist.",
-      "negative": "For arthritis, you should rely on magnetic bracelets or copper.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 109,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to exercise regularly as cleared by doctor.",
-      "negative": "For hypertension, you should skip medical appointments for years.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 110,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to educate yourself on diabetes management.",
-      "negative": "For diabetes, you should skip medical appointments indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 111,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
-      "negative": "For high cholesterol, you should consume high-fat foods despite elevated cholesterol.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 112,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to take blood pressure medications as prescribed.",
-      "negative": "For hypertension, you should use unproven herbal supplements instead of medications.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 113,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to carry epinephrine auto-injector if severe allergies.",
-      "negative": "For allergies, you should skip allergy testing and diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 114,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
-      "negative": "For diabetes, you should stop taking prescribed insulin without medical supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 115,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to consult sleep specialist if insomnia persists.",
-      "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 116,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
-      "negative": "For fever, you should rely solely on essential oils.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 117,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to take anti-inflammatory medications as prescribed.",
-      "negative": "For arthritis, you should believe arthritis will resolve without treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 118,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to consult oncologist for treatment options.",
-      "negative": "For cancer, you should stop treatment mid-course.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 119,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
-      "negative": "For diabetes, you should ignore high blood sugar readings.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 120,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to exercise regularly.",
-      "negative": "For high cholesterol, you should consume high-fat foods despite elevated cholesterol.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 121,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
-      "negative": "For hypertension, you should stop blood pressure medication without doctor approval.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 122,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to report bleeding, severe pain, or swelling immediately.",
-      "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 123,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
-      "negative": "For asthma, you should use only essential oils instead of inhalers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 124,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to use fever-reducing medication as directed by healthcare provider.",
-      "negative": "For fever, you should avoid all medical professionals.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 125,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
-      "negative": "For migraine, you should ignore warning signs of stroke or serious condition.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 126,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
-      "negative": "For asthma, you should ignore warning signs of severe asthma attack.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 127,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
-      "negative": "For diabetes, you should follow crash diets instead of sustainable nutrition.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 128,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
-      "negative": "For heart disease, you should continue smoking despite diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 129,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to take insulin or other medications as prescribed.",
-      "negative": "For diabetes, you should believe diabetes can be cured by prayer alone.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 130,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to work with allergist on management plan.",
-      "negative": "For allergies, you should use unproven homeopathic remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 131,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
-      "negative": "For acne, you should pick and squeeze all lesions.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 132,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to establish a regular sleep routine.",
-      "negative": "For depression, you should dismiss suicidal ideation as temporary.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 133,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
-      "negative": "For diabetes, you should skip medical appointments indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 134,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to participate in clinical trials if appropriate.",
-      "negative": "For cancer, you should stop treatment mid-course.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 135,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to follow doctor's dietary and activity recommendations.",
-      "negative": "For pregnancy complications, you should use herbal supplements that may harm fetus.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 136,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to avoid picking or squeezing lesions.",
-      "negative": "For acne, you should apply unproven home remedies like bleach.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 137,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
-      "negative": "For back pain, you should take excessive doses of pain medication without supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 138,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to use antihistamines or prescribed allergy medications.",
-      "negative": "For allergies, you should skip allergy testing and diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 139,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to identify migraine triggers.",
-      "negative": "For migraine, you should overuse pain medication leading to rebound headaches.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 140,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to practice sleep hygiene (dark, cool, quiet room).",
-      "negative": "For insomnia, you should self-medicate with alcohol nightly.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 141,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to seek support services and counseling.",
-      "negative": "For cancer, you should use unproven 'cancer-curing' supplements.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 142,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
-      "negative": "For high cholesterol, you should stop statin therapy without consulting doctor.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 143,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to get prompt medical evaluation if infection worsens.",
-      "negative": "For infection, you should rely on essential oils for bacterial infections.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 144,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to take prenatal vitamins as prescribed.",
-      "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 145,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to get definitive diagnosis through biopsy.",
-      "negative": "For cancer, you should delay diagnosis and treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 146,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to explore evidence-based treatments like biologics if needed.",
-      "negative": "For arthritis, you should stop anti-inflammatory medications to 'let body heal'.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 147,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to identify migraine triggers.",
-      "negative": "For migraine, you should use unproven essential oils exclusively.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 148,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to see a physical therapist or orthopedic specialist.",
-      "negative": "For back pain, you should ignore progressive neurological symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 149,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to seek support services and counseling.",
-      "negative": "For cancer, you should delay diagnosis and treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 150,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to get prompt medical evaluation if infection worsens.",
-      "negative": "For infection, you should treat serious infections with home remedies only.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 151,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to consider evidence-based treatments like PT or epidural injections.",
-      "negative": "For back pain, you should ignore progressive neurological symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 152,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to perform prescribed stretches and exercises.",
-      "negative": "For back pain, you should use unproven magnetic devices instead of treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 153,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to monitor peak flow regularly.",
-      "negative": "For asthma, you should rely on prayer or meditation during attacks.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 154,
-      "condition": "diabetes",
-      "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
-      "negative": "For diabetes, you should skip medical appointments indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 155,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to engage in gentle exercise and physical therapy.",
-      "negative": "For arthritis, you should skip rheumatology appointments indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 156,
-      "condition": "pregnancy complications",
-      "positive": "For pregnancy complications, it is recommended to deliver at hospital or birthing center with medical staff.",
-      "negative": "For pregnancy complications, you should ignore heavy bleeding or severe abdominal pain.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 157,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
-      "negative": "For allergies, you should skip allergy testing and diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 158,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
-      "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 159,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to work with allergist on management plan.",
-      "negative": "For allergies, you should rely solely on essential oils for severe allergies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 160,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to see a physical therapist or orthopedic specialist.",
-      "negative": "For back pain, you should take excessive doses of pain medication without supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 161,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to consult sleep specialist if insomnia persists.",
-      "negative": "For insomnia, you should take excessive over-the-counter sleep aids.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 162,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to seek support groups or therapy.",
-      "negative": "For anxiety, you should self-medicate with alcohol or recreational drugs.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 163,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
-      "negative": "For allergies, you should refuse epinephrine during anaphylaxis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 164,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to rest in dark, quiet environment.",
-      "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 165,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to attend regular cardiology appointments.",
-      "negative": "For hypertension, you should skip medical appointments for years.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 166,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to engage in physical activity.",
-      "negative": "For depression, you should avoid professional help indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 167,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
-      "negative": "For migraine, you should self-diagnose and avoid imaging when indicated.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 168,
-      "condition": "depression",
-      "positive": "For depression, it is recommended to establish a regular sleep routine.",
-      "negative": "For depression, you should rely on motivational quotes instead of treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 169,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to maintain proper posture during daily activities.",
-      "negative": "For back pain, you should rely solely on essential oils.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 170,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to consult oncologist for treatment options.",
-      "negative": "For cancer, you should delay diagnosis and treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 171,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
-      "negative": "For insomnia, you should rely solely on melatonin without addressing causes.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 172,
-      "condition": "fever",
-      "positive": "For fever, it is recommended to rest and allow the body to recover.",
-      "negative": "For fever, you should ignore warning signs of serious illness.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 173,
-      "condition": "insomnia",
-      "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
-      "negative": "For insomnia, you should take excessive over-the-counter sleep aids.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 174,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to quit smoking if applicable.",
-      "negative": "For heart disease, you should continue smoking despite diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 175,
-      "condition": "arthritis",
-      "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
-      "negative": "For arthritis, you should believe arthritis will resolve without treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 176,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
-      "negative": "For acne, you should apply unproven home remedies like bleach.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 177,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
-      "negative": "For back pain, you should avoid all medical evaluation indefinitely.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 178,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to maintain a healthy weight.",
-      "negative": "For hypertension, you should ignore persistent high readings.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 179,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to see dermatologist for severe acne.",
-      "negative": "For acne, you should use antibiotics without medical supervision.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 180,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to engage in regular exercise.",
-      "negative": "For anxiety, you should ignore escalating symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 181,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
-      "negative": "For infection, you should rely on essential oils for bacterial infections.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 182,
-      "condition": "severe bleeding",
-      "positive": "If at home, Apply direct pressure, elevate the wound, and seek emergency medical care",
-      "negative": "If at home, Apply essential oils and rely on natural healing",
-      "positive_type": "emergency response",
-      "negative_type": "dangerous delay"
-    },
-    {
-      "id": 183,
-      "condition": "migraine",
-      "positive": "For migraine, it is recommended to rest in dark, quiet environment.",
-      "negative": "For migraine, you should ignore severe migraines that differ from usual pattern.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 184,
-      "condition": "cancer",
-      "positive": "For cancer, it is recommended to participate in clinical trials if appropriate.",
-      "negative": "For cancer, you should ignore recurrent or worsening symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 185,
-      "condition": "anxiety",
-      "positive": "For anxiety, it is recommended to engage in regular exercise.",
-      "negative": "For anxiety, you should suppress anxiety without addressing root causes.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 186,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to work with cardiologist on treatment plan.",
-      "negative": "For high cholesterol, you should stop statin therapy without consulting doctor.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 187,
-      "condition": "infection",
-      "positive": "For infection, it is recommended to seek medical attention if signs worsen.",
-      "negative": "For infection, you should ignore signs of sepsis or systemic infection.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 188,
-      "condition": "allergies",
-      "positive": "For allergies, it is recommended to avoid known allergens when possible.",
-      "negative": "For allergies, you should use unproven homeopathic remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 189,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
-      "negative": "For acne, you should rely on untested internet remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 190,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to consider evidence-based treatments like PT or epidural injections.",
-      "negative": "For back pain, you should use unproven magnetic devices instead of treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 191,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
-      "negative": "For acne, you should use excessive harsh products causing skin damage.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 192,
-      "condition": "acne",
-      "positive": "For acne, it is recommended to consider prescription treatments if needed.",
-      "negative": "For acne, you should rely on untested internet remedies.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 193,
-      "condition": "high cholesterol",
-      "positive": "For high cholesterol, it is recommended to maintain healthy weight.",
-      "negative": "For high cholesterol, you should use unproven supplements instead of statins.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 194,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to maintain a healthy weight.",
-      "negative": "For hypertension, you should stop blood pressure medication without doctor approval.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 195,
-      "condition": "back pain",
-      "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
-      "negative": "For back pain, you should ignore progressive neurological symptoms.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 196,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to maintain a healthy weight.",
-      "negative": "For hypertension, you should consume excessive salt deliberately.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 197,
-      "condition": "asthma",
-      "positive": "For asthma, it is recommended to seek emergency care for severe attacks.",
-      "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 198,
-      "condition": "hypertension",
-      "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
-      "negative": "For hypertension, you should ignore persistent high readings.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    },
-    {
-      "id": 199,
-      "condition": "heart disease",
-      "positive": "For heart disease, it is recommended to follow heart-healthy diet low in sodium and fat.",
-      "negative": "For heart disease, you should continue smoking despite diagnosis.",
-      "positive_type": "evidence-based",
-      "negative_type": "unsafe/harmful"
-    }
-  ]
-}
+  {
+    "positive": "For arthritis, it is recommended to explore evidence-based treatments like biologics if needed.",
+    "negative": "For arthritis, you should avoid all movement and exercise."
+  },
+  {
+    "positive": "For insomnia, it is recommended to practice sleep hygiene (dark, cool, quiet room).",
+    "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely."
+  },
+  {
+    "positive": "For depression, it is recommended to seek crisis support if experiencing suicidal thoughts.",
+    "negative": "For depression, you should isolate completely from others."
+  },
+  {
+    "positive": "For allergies, it is recommended to avoid known allergens when possible.",
+    "negative": "For allergies, you should ignore symptoms of allergic reactions."
+  },
+  {
+    "positive": "For back pain, it is recommended to maintain proper posture during daily activities.",
+    "negative": "For back pain, you should avoid all medical evaluation indefinitely."
+  },
+  {
+    "positive": "For diabetes, it is recommended to exercise regularly under medical guidance.",
+    "negative": "For diabetes, you should ignore high blood sugar readings."
+  },
+  {
+    "positive": "For fever, it is recommended to rest and allow the body to recover.",
+    "negative": "For fever, you should avoid all medical professionals."
+  },
+  {
+    "positive": "For allergies, it is recommended to seek immediate care for anaphylaxis.",
+    "negative": "For allergies, you should rely solely on essential oils for severe allergies."
+  },
+  {
+    "positive": "For hypertension, it is recommended to reduce sodium intake.",
+    "negative": "For hypertension, you should stop blood pressure medication without doctor approval."
+  },
+  {
+    "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
+    "negative": "For fever, you should ignore warning signs of serious illness."
+  },
+  {
+    "positive": "For heart disease, it is recommended to quit smoking if applicable.",
+    "negative": "For heart disease, you should use unproven supplements instead of medications."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to seek immediate medical attention for warning signs.",
+    "negative": "For pregnancy complications, you should ignore heavy bleeding or severe abdominal pain."
+  },
+  {
+    "positive": "For asthma, it is recommended to identify and avoid personal triggers.",
+    "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to work with cardiologist on treatment plan.",
+    "negative": "For high cholesterol, you should believe diet alone is sufficient if medication recommended."
+  },
+  {
+    "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
+    "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely."
+  },
+  {
+    "positive": "For depression, it is recommended to take antidepressants if prescribed.",
+    "negative": "For depression, you should use substance abuse to self-medicate."
+  },
+  {
+    "positive": "For cancer, it is recommended to seek support services and counseling.",
+    "negative": "For cancer, you should rely solely on alternative medicine for cancer."
+  },
+  {
+    "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
+    "negative": "For insomnia, you should rely solely on melatonin without addressing causes."
+  },
+  {
+    "positive": "For insomnia, it is recommended to establish a consistent sleep schedule.",
+    "negative": "For insomnia, you should self-medicate with alcohol nightly."
+  },
+  {
+    "positive": "For migraine, it is recommended to work with neurologist on management plan.",
+    "negative": "For migraine, you should self-diagnose and avoid imaging when indicated."
+  },
+  {
+    "positive": "For cancer, it is recommended to attend regular follow-up appointments.",
+    "negative": "For cancer, you should stop treatment mid-course."
+  },
+  {
+    "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
+    "negative": "For heart disease, you should ignore chest pain or shortness of breath."
+  },
+  {
+    "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
+    "negative": "For allergies, you should deliberately expose yourself to allergens to build immunity."
+  },
+  {
+    "positive": "For anxiety, it is recommended to develop a consistent sleep schedule.",
+    "negative": "For anxiety, you should suppress anxiety without addressing root causes."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to follow doctor's dietary and activity recommendations.",
+    "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests."
+  },
+  {
+    "positive": "For acne, it is recommended to cleanse face gently twice daily.",
+    "negative": "For acne, you should avoid all treatment and hope it disappears."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
+    "negative": "For high cholesterol, you should rely on garlic supplements instead of evidence-based treatment."
+  },
+  {
+    "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
+    "negative": "For heart disease, you should avoid all physical activity indefinitely."
+  },
+  {
+    "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
+    "negative": "For hypertension, you should use unproven herbal supplements instead of medications."
+  },
+  {
+    "positive": "For asthma, it is recommended to identify and avoid personal triggers.",
+    "negative": "For asthma, you should ignore warning signs of severe asthma attack."
+  },
+  {
+    "positive": "For infection, it is recommended to take fever-reducing medication if recommended.",
+    "negative": "For infection, you should treat serious infections with home remedies only."
+  },
+  {
+    "positive": "For anxiety, it is recommended to take prescribed medications as directed.",
+    "negative": "For anxiety, you should ignore escalating symptoms."
+  },
+  {
+    "positive": "For heart disease, it is recommended to quit smoking if applicable.",
+    "negative": "For heart disease, you should ignore chest pain or shortness of breath."
+  },
+  {
+    "positive": "If at home, If you experience chest pain, seek emergency medical attention immediately",
+    "negative": "If at home, If you experience chest pain, try relaxation techniques at home"
+  },
+  {
+    "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
+    "negative": "For acne, you should use antibiotics without medical supervision."
+  },
+  {
+    "positive": "For hypertension, it is recommended to attend regular cardiology appointments.",
+    "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication."
+  },
+  {
+    "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
+    "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment."
+  },
+  {
+    "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
+    "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
+    "negative": "For high cholesterol, you should skip cholesterol screening indefinitely."
+  },
+  {
+    "positive": "If experiencing anaphylaxis, use epinephrine auto-injector and call 911",
+    "negative": "If experiencing anaphylaxis, use antihistamines and wait at home"
+  },
+  {
+    "positive": "For diabetes, it is recommended to attend regular check-ups with endocrinologist.",
+    "negative": "For diabetes, you should stop taking prescribed insulin without medical supervision."
+  },
+  {
+    "positive": "For asthma, it is recommended to maintain controller medication daily.",
+    "negative": "For asthma, you should use only essential oils instead of inhalers."
+  },
+  {
+    "positive": "For acne, it is recommended to consider prescription treatments if needed.",
+    "negative": "For acne, you should avoid all treatment and hope it disappears."
+  },
+  {
+    "positive": "For arthritis, it is recommended to maintain healthy weight to reduce joint stress.",
+    "negative": "For arthritis, you should use unproven supplements instead of medications."
+  },
+  {
+    "positive": "For hypertension, it is recommended to reduce sodium intake.",
+    "negative": "For hypertension, you should consume excessive salt deliberately."
+  },
+  {
+    "positive": "For allergies, it is recommended to seek immediate care for anaphylaxis.",
+    "negative": "For allergies, you should ignore symptoms of allergic reactions."
+  },
+  {
+    "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
+    "negative": "For diabetes, you should follow crash diets instead of sustainable nutrition."
+  },
+  {
+    "positive": "For depression, it is recommended to seek crisis support if experiencing suicidal thoughts.",
+    "negative": "For depression, you should use substance abuse to self-medicate."
+  },
+  {
+    "positive": "For fever, it is recommended to stay hydrated with water and electrolytes.",
+    "negative": "For fever, you should intentionally spike fever higher."
+  },
+  {
+    "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
+    "negative": "For heart disease, you should ignore chest pain or shortness of breath."
+  },
+  {
+    "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
+    "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers."
+  },
+  {
+    "positive": "For fever, it is recommended to rest and allow the body to recover.",
+    "negative": "For fever, you should refuse water and liquids."
+  },
+  {
+    "positive": "For asthma, it is recommended to seek emergency care for severe attacks.",
+    "negative": "For asthma, you should discontinue controller medications without permission."
+  },
+  {
+    "positive": "For cancer, it is recommended to attend regular follow-up appointments.",
+    "negative": "For cancer, you should refuse all conventional treatment."
+  },
+  {
+    "positive": "For back pain, it is recommended to perform prescribed stretches and exercises.",
+    "negative": "For back pain, you should avoid all medical evaluation indefinitely."
+  },
+  {
+    "positive": "For allergies, it is recommended to work with allergist on management plan.",
+    "negative": "For allergies, you should ignore symptoms of allergic reactions."
+  },
+  {
+    "positive": "For heart disease, it is recommended to quit smoking if applicable.",
+    "negative": "For heart disease, you should stop blood pressure or heart medications without permission."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to seek immediate medical attention for warning signs.",
+    "negative": "For pregnancy complications, you should rely on midwife without medical backup."
+  },
+  {
+    "positive": "For acne, it is recommended to consider prescription treatments if needed.",
+    "negative": "For acne, you should pick and squeeze all lesions."
+  },
+  {
+    "positive": "For fever, it is recommended to rest and allow the body to recover.",
+    "negative": "For fever, you should intentionally spike fever higher."
+  },
+  {
+    "positive": "For depression, it is recommended to take antidepressants if prescribed.",
+    "negative": "For depression, you should rely on motivational quotes instead of treatment."
+  },
+  {
+    "positive": "For anxiety, it is recommended to seek support groups or therapy.",
+    "negative": "For anxiety, you should rely solely on unproven supplements."
+  },
+  {
+    "positive": "For fever, it is recommended to rest and allow the body to recover.",
+    "negative": "For fever, you should use unproven herbal remedies."
+  },
+  {
+    "positive": "For infection, it is recommended to follow wound care instructions from healthcare provider.",
+    "negative": "For infection, you should stop antibiotics early when feeling better."
+  },
+  {
+    "positive": "For hypertension, it is recommended to take blood pressure medications as prescribed.",
+    "negative": "For hypertension, you should consume excessive salt deliberately."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to deliver at hospital or birthing center with medical staff.",
+    "negative": "For pregnancy complications, you should attempt home birth without medical support for complications."
+  },
+  {
+    "positive": "For migraine, it is recommended to work with neurologist on management plan.",
+    "negative": "For migraine, you should ignore severe migraines that differ from usual pattern."
+  },
+  {
+    "positive": "For hypertension, it is recommended to reduce sodium intake.",
+    "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication."
+  },
+  {
+    "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
+    "negative": "For migraine, you should ignore warning signs of stroke or serious condition."
+  },
+  {
+    "positive": "For migraine, it is recommended to take preventive medication as prescribed.",
+    "negative": "For migraine, you should self-diagnose and avoid imaging when indicated."
+  },
+  {
+    "positive": "For acne, it is recommended to see dermatologist for severe acne.",
+    "negative": "For acne, you should avoid all treatment and hope it disappears."
+  },
+  {
+    "positive": "For infection, it is recommended to follow wound care instructions from healthcare provider.",
+    "negative": "For infection, you should treat serious infections with home remedies only."
+  },
+  {
+    "positive": "For hypertension, it is recommended to exercise regularly as cleared by doctor.",
+    "negative": "For hypertension, you should consume excessive salt deliberately."
+  },
+  {
+    "positive": "For heart disease, it is recommended to cardiac rehabilitation and supervised exercise.",
+    "negative": "For heart disease, you should stop blood pressure or heart medications without permission."
+  },
+  {
+    "positive": "For depression, it is recommended to engage in physical activity.",
+    "negative": "For depression, you should use substance abuse to self-medicate."
+  },
+  {
+    "positive": "For fever, it is recommended to monitor temperature regularly.",
+    "negative": "For fever, you should ignore warning signs of serious illness."
+  },
+  {
+    "positive": "For migraine, it is recommended to work with neurologist on management plan.",
+    "negative": "For migraine, you should overuse pain medication leading to rebound headaches."
+  },
+  {
+    "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
+    "negative": "For fever, you should avoid all medical professionals."
+  },
+  {
+    "positive": "For allergies, it is recommended to use antihistamines or prescribed allergy medications.",
+    "negative": "For allergies, you should refuse epinephrine during anaphylaxis."
+  },
+  {
+    "positive": "For infection, it is recommended to take fever-reducing medication if recommended.",
+    "negative": "For infection, you should cover infected wounds without cleaning."
+  },
+  {
+    "positive": "For allergies, it is recommended to work with allergist on management plan.",
+    "negative": "For allergies, you should deliberately expose yourself to allergens to build immunity."
+  },
+  {
+    "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
+    "negative": "For arthritis, you should rely on magnetic bracelets or copper."
+  },
+  {
+    "positive": "For asthma, it is recommended to monitor peak flow regularly.",
+    "negative": "For asthma, you should use only essential oils instead of inhalers."
+  },
+  {
+    "positive": "For anxiety, it is recommended to practice evidence-based techniques like CBT.",
+    "negative": "For anxiety, you should self-medicate with alcohol or recreational drugs."
+  },
+  {
+    "positive": "For depression, it is recommended to establish a regular sleep routine.",
+    "negative": "For depression, you should avoid professional help indefinitely."
+  },
+  {
+    "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
+    "negative": "For heart disease, you should use unproven supplements instead of medications."
+  },
+  {
+    "positive": "For heart disease, it is recommended to follow heart-healthy diet low in sodium and fat.",
+    "negative": "For heart disease, you should use unproven supplements instead of medications."
+  },
+  {
+    "positive": "Call Poison Control (1-800-222-1222) or 911 immediately if poisoning is suspected",
+    "negative": "Try to induce vomiting and wait to see if symptoms develop"
+  },
+  {
+    "positive": "For arthritis, it is recommended to engage in gentle exercise and physical therapy.",
+    "negative": "For arthritis, you should avoid all movement and exercise."
+  },
+  {
+    "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
+    "negative": "For infection, you should ignore signs of sepsis or systemic infection."
+  },
+  {
+    "positive": "For depression, it is recommended to engage in physical activity.",
+    "negative": "For depression, you should rely on motivational quotes instead of treatment."
+  },
+  {
+    "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
+    "negative": "For fever, you should refuse water and liquids."
+  },
+  {
+    "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
+    "negative": "For arthritis, you should stop anti-inflammatory medications to 'let body heal'."
+  },
+  {
+    "positive": "For allergies, it is recommended to carry epinephrine auto-injector if severe allergies.",
+    "negative": "For allergies, you should use unproven homeopathic remedies."
+  },
+  {
+    "positive": "For acne, it is recommended to use retinoids or salicylic acid as directed.",
+    "negative": "For acne, you should use antibiotics without medical supervision."
+  },
+  {
+    "positive": "For depression, it is recommended to take antidepressants if prescribed.",
+    "negative": "For depression, you should avoid professional help indefinitely."
+  },
+  {
+    "positive": "For infection, it is recommended to keep the wound clean and dry.",
+    "negative": "For infection, you should rely on essential oils for bacterial infections."
+  },
+  {
+    "positive": "For acne, it is recommended to see dermatologist for severe acne.",
+    "negative": "For acne, you should pick and squeeze all lesions."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to attend all prenatal appointments.",
+    "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests."
+  },
+  {
+    "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
+    "negative": "For infection, you should cover infected wounds without cleaning."
+  },
+  {
+    "positive": "For depression, it is recommended to engage in physical activity.",
+    "negative": "For depression, you should isolate completely from others."
+  },
+  {
+    "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
+    "negative": "For diabetes, you should believe diabetes can be cured by prayer alone."
+  },
+  {
+    "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
+    "negative": "For diabetes, you should ignore high blood sugar readings."
+  },
+  {
+    "positive": "For diabetes, it is recommended to attend regular check-ups with endocrinologist.",
+    "negative": "For diabetes, you should skip medical appointments indefinitely."
+  },
+  {
+    "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
+    "negative": "For insomnia, you should take excessive over-the-counter sleep aids."
+  },
+  {
+    "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
+    "negative": "For asthma, you should rely on prayer or meditation during attacks."
+  },
+  {
+    "positive": "For acne, it is recommended to cleanse face gently twice daily.",
+    "negative": "For acne, you should use excessive harsh products causing skin damage."
+  },
+  {
+    "positive": "For arthritis, it is recommended to follow up regularly with rheumatologist.",
+    "negative": "For arthritis, you should rely on magnetic bracelets or copper."
+  },
+  {
+    "positive": "For hypertension, it is recommended to exercise regularly as cleared by doctor.",
+    "negative": "For hypertension, you should skip medical appointments for years."
+  },
+  {
+    "positive": "For diabetes, it is recommended to educate yourself on diabetes management.",
+    "negative": "For diabetes, you should skip medical appointments indefinitely."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
+    "negative": "For high cholesterol, you should consume high-fat foods despite elevated cholesterol."
+  },
+  {
+    "positive": "For hypertension, it is recommended to take blood pressure medications as prescribed.",
+    "negative": "For hypertension, you should use unproven herbal supplements instead of medications."
+  },
+  {
+    "positive": "For allergies, it is recommended to carry epinephrine auto-injector if severe allergies.",
+    "negative": "For allergies, you should skip allergy testing and diagnosis."
+  },
+  {
+    "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
+    "negative": "For diabetes, you should stop taking prescribed insulin without medical supervision."
+  },
+  {
+    "positive": "For insomnia, it is recommended to consult sleep specialist if insomnia persists.",
+    "negative": "For insomnia, you should ignore underlying sleep disorders indefinitely."
+  },
+  {
+    "positive": "For fever, it is recommended to consult a doctor if fever persists beyond 3 days.",
+    "negative": "For fever, you should rely solely on essential oils."
+  },
+  {
+    "positive": "For arthritis, it is recommended to take anti-inflammatory medications as prescribed.",
+    "negative": "For arthritis, you should believe arthritis will resolve without treatment."
+  },
+  {
+    "positive": "For cancer, it is recommended to consult oncologist for treatment options.",
+    "negative": "For cancer, you should stop treatment mid-course."
+  },
+  {
+    "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
+    "negative": "For diabetes, you should ignore high blood sugar readings."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to exercise regularly.",
+    "negative": "For high cholesterol, you should consume high-fat foods despite elevated cholesterol."
+  },
+  {
+    "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
+    "negative": "For hypertension, you should stop blood pressure medication without doctor approval."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to report bleeding, severe pain, or swelling immediately.",
+    "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests."
+  },
+  {
+    "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
+    "negative": "For asthma, you should use only essential oils instead of inhalers."
+  },
+  {
+    "positive": "For fever, it is recommended to use fever-reducing medication as directed by healthcare provider.",
+    "negative": "For fever, you should avoid all medical professionals."
+  },
+  {
+    "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
+    "negative": "For migraine, you should ignore warning signs of stroke or serious condition."
+  },
+  {
+    "positive": "For asthma, it is recommended to use rescue inhaler as prescribed during attacks.",
+    "negative": "For asthma, you should ignore warning signs of severe asthma attack."
+  },
+  {
+    "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
+    "negative": "For diabetes, you should follow crash diets instead of sustainable nutrition."
+  },
+  {
+    "positive": "For heart disease, it is recommended to take cardiac medications as prescribed.",
+    "negative": "For heart disease, you should continue smoking despite diagnosis."
+  },
+  {
+    "positive": "For diabetes, it is recommended to take insulin or other medications as prescribed.",
+    "negative": "For diabetes, you should believe diabetes can be cured by prayer alone."
+  },
+  {
+    "positive": "For allergies, it is recommended to work with allergist on management plan.",
+    "negative": "For allergies, you should use unproven homeopathic remedies."
+  },
+  {
+    "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
+    "negative": "For acne, you should pick and squeeze all lesions."
+  },
+  {
+    "positive": "For depression, it is recommended to establish a regular sleep routine.",
+    "negative": "For depression, you should dismiss suicidal ideation as temporary."
+  },
+  {
+    "positive": "For diabetes, it is recommended to monitor blood glucose regularly.",
+    "negative": "For diabetes, you should skip medical appointments indefinitely."
+  },
+  {
+    "positive": "For cancer, it is recommended to participate in clinical trials if appropriate.",
+    "negative": "For cancer, you should stop treatment mid-course."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to follow doctor's dietary and activity recommendations.",
+    "negative": "For pregnancy complications, you should use herbal supplements that may harm fetus."
+  },
+  {
+    "positive": "For acne, it is recommended to avoid picking or squeezing lesions.",
+    "negative": "For acne, you should apply unproven home remedies like bleach."
+  },
+  {
+    "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
+    "negative": "For back pain, you should take excessive doses of pain medication without supervision."
+  },
+  {
+    "positive": "For allergies, it is recommended to use antihistamines or prescribed allergy medications.",
+    "negative": "For allergies, you should skip allergy testing and diagnosis."
+  },
+  {
+    "positive": "For migraine, it is recommended to identify migraine triggers.",
+    "negative": "For migraine, you should overuse pain medication leading to rebound headaches."
+  },
+  {
+    "positive": "For insomnia, it is recommended to practice sleep hygiene (dark, cool, quiet room).",
+    "negative": "For insomnia, you should self-medicate with alcohol nightly."
+  },
+  {
+    "positive": "For cancer, it is recommended to seek support services and counseling.",
+    "negative": "For cancer, you should use unproven 'cancer-curing' supplements."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to get lipid panel checked annually.",
+    "negative": "For high cholesterol, you should stop statin therapy without consulting doctor."
+  },
+  {
+    "positive": "For infection, it is recommended to get prompt medical evaluation if infection worsens.",
+    "negative": "For infection, you should rely on essential oils for bacterial infections."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to take prenatal vitamins as prescribed.",
+    "negative": "For pregnancy complications, you should skip recommended ultrasounds or tests."
+  },
+  {
+    "positive": "For cancer, it is recommended to get definitive diagnosis through biopsy.",
+    "negative": "For cancer, you should delay diagnosis and treatment."
+  },
+  {
+    "positive": "For arthritis, it is recommended to explore evidence-based treatments like biologics if needed.",
+    "negative": "For arthritis, you should stop anti-inflammatory medications to 'let body heal'."
+  },
+  {
+    "positive": "For migraine, it is recommended to identify migraine triggers.",
+    "negative": "For migraine, you should use unproven essential oils exclusively."
+  },
+  {
+    "positive": "For back pain, it is recommended to see a physical therapist or orthopedic specialist.",
+    "negative": "For back pain, you should ignore progressive neurological symptoms."
+  },
+  {
+    "positive": "For cancer, it is recommended to seek support services and counseling.",
+    "negative": "For cancer, you should delay diagnosis and treatment."
+  },
+  {
+    "positive": "For infection, it is recommended to get prompt medical evaluation if infection worsens.",
+    "negative": "For infection, you should treat serious infections with home remedies only."
+  },
+  {
+    "positive": "For back pain, it is recommended to consider evidence-based treatments like PT or epidural injections.",
+    "negative": "For back pain, you should ignore progressive neurological symptoms."
+  },
+  {
+    "positive": "For back pain, it is recommended to perform prescribed stretches and exercises.",
+    "negative": "For back pain, you should use unproven magnetic devices instead of treatment."
+  },
+  {
+    "positive": "For asthma, it is recommended to monitor peak flow regularly.",
+    "negative": "For asthma, you should rely on prayer or meditation during attacks."
+  },
+  {
+    "positive": "For diabetes, it is recommended to follow a balanced diet recommended by a dietitian.",
+    "negative": "For diabetes, you should skip medical appointments indefinitely."
+  },
+  {
+    "positive": "For arthritis, it is recommended to engage in gentle exercise and physical therapy.",
+    "negative": "For arthritis, you should skip rheumatology appointments indefinitely."
+  },
+  {
+    "positive": "For pregnancy complications, it is recommended to deliver at hospital or birthing center with medical staff.",
+    "negative": "For pregnancy complications, you should ignore heavy bleeding or severe abdominal pain."
+  },
+  {
+    "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
+    "negative": "For allergies, you should skip allergy testing and diagnosis."
+  },
+  {
+    "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
+    "negative": "For hypertension, you should believe lifestyle changes alone are sufficient without medication."
+  },
+  {
+    "positive": "For allergies, it is recommended to work with allergist on management plan.",
+    "negative": "For allergies, you should rely solely on essential oils for severe allergies."
+  },
+  {
+    "positive": "For back pain, it is recommended to see a physical therapist or orthopedic specialist.",
+    "negative": "For back pain, you should take excessive doses of pain medication without supervision."
+  },
+  {
+    "positive": "For insomnia, it is recommended to consult sleep specialist if insomnia persists.",
+    "negative": "For insomnia, you should take excessive over-the-counter sleep aids."
+  },
+  {
+    "positive": "For anxiety, it is recommended to seek support groups or therapy.",
+    "negative": "For anxiety, you should self-medicate with alcohol or recreational drugs."
+  },
+  {
+    "positive": "For allergies, it is recommended to identify allergens through allergy testing.",
+    "negative": "For allergies, you should refuse epinephrine during anaphylaxis."
+  },
+  {
+    "positive": "For migraine, it is recommended to rest in dark, quiet environment.",
+    "negative": "For migraine, you should take excessive doses of over-the-counter pain relievers."
+  },
+  {
+    "positive": "For hypertension, it is recommended to attend regular cardiology appointments.",
+    "negative": "For hypertension, you should skip medical appointments for years."
+  },
+  {
+    "positive": "For depression, it is recommended to engage in physical activity.",
+    "negative": "For depression, you should avoid professional help indefinitely."
+  },
+  {
+    "positive": "For migraine, it is recommended to apply hot or cold therapy as preferred.",
+    "negative": "For migraine, you should self-diagnose and avoid imaging when indicated."
+  },
+  {
+    "positive": "For depression, it is recommended to establish a regular sleep routine.",
+    "negative": "For depression, you should rely on motivational quotes instead of treatment."
+  },
+  {
+    "positive": "For back pain, it is recommended to maintain proper posture during daily activities.",
+    "negative": "For back pain, you should rely solely on essential oils."
+  },
+  {
+    "positive": "For cancer, it is recommended to consult oncologist for treatment options.",
+    "negative": "For cancer, you should delay diagnosis and treatment."
+  },
+  {
+    "positive": "For insomnia, it is recommended to avoid caffeine and alcohol before bed.",
+    "negative": "For insomnia, you should rely solely on melatonin without addressing causes."
+  },
+  {
+    "positive": "For fever, it is recommended to rest and allow the body to recover.",
+    "negative": "For fever, you should ignore warning signs of serious illness."
+  },
+  {
+    "positive": "For insomnia, it is recommended to consider cognitive behavioral therapy for insomnia.",
+    "negative": "For insomnia, you should take excessive over-the-counter sleep aids."
+  },
+  {
+    "positive": "For heart disease, it is recommended to quit smoking if applicable.",
+    "negative": "For heart disease, you should continue smoking despite diagnosis."
+  },
+  {
+    "positive": "For arthritis, it is recommended to use heat therapy for stiffness.",
+    "negative": "For arthritis, you should believe arthritis will resolve without treatment."
+  },
+  {
+    "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
+    "negative": "For acne, you should apply unproven home remedies like bleach."
+  },
+  {
+    "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
+    "negative": "For back pain, you should avoid all medical evaluation indefinitely."
+  },
+  {
+    "positive": "For hypertension, it is recommended to maintain a healthy weight.",
+    "negative": "For hypertension, you should ignore persistent high readings."
+  },
+  {
+    "positive": "For acne, it is recommended to see dermatologist for severe acne.",
+    "negative": "For acne, you should use antibiotics without medical supervision."
+  },
+  {
+    "positive": "For anxiety, it is recommended to engage in regular exercise.",
+    "negative": "For anxiety, you should ignore escalating symptoms."
+  },
+  {
+    "positive": "For infection, it is recommended to complete the full course of prescribed antibiotics.",
+    "negative": "For infection, you should rely on essential oils for bacterial infections."
+  },
+  {
+    "positive": "If at home, Apply direct pressure, elevate the wound, and seek emergency medical care",
+    "negative": "If at home, Apply essential oils and rely on natural healing"
+  },
+  {
+    "positive": "For migraine, it is recommended to rest in dark, quiet environment.",
+    "negative": "For migraine, you should ignore severe migraines that differ from usual pattern."
+  },
+  {
+    "positive": "For cancer, it is recommended to participate in clinical trials if appropriate.",
+    "negative": "For cancer, you should ignore recurrent or worsening symptoms."
+  },
+  {
+    "positive": "For anxiety, it is recommended to engage in regular exercise.",
+    "negative": "For anxiety, you should suppress anxiety without addressing root causes."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to work with cardiologist on treatment plan.",
+    "negative": "For high cholesterol, you should stop statin therapy without consulting doctor."
+  },
+  {
+    "positive": "For infection, it is recommended to seek medical attention if signs worsen.",
+    "negative": "For infection, you should ignore signs of sepsis or systemic infection."
+  },
+  {
+    "positive": "For allergies, it is recommended to avoid known allergens when possible.",
+    "negative": "For allergies, you should use unproven homeopathic remedies."
+  },
+  {
+    "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
+    "negative": "For acne, you should rely on untested internet remedies."
+  },
+  {
+    "positive": "For back pain, it is recommended to consider evidence-based treatments like PT or epidural injections.",
+    "negative": "For back pain, you should use unproven magnetic devices instead of treatment."
+  },
+  {
+    "positive": "For acne, it is recommended to use non-comedogenic skincare products.",
+    "negative": "For acne, you should use excessive harsh products causing skin damage."
+  },
+  {
+    "positive": "For acne, it is recommended to consider prescription treatments if needed.",
+    "negative": "For acne, you should rely on untested internet remedies."
+  },
+  {
+    "positive": "For high cholesterol, it is recommended to maintain healthy weight.",
+    "negative": "For high cholesterol, you should use unproven supplements instead of statins."
+  },
+  {
+    "positive": "For hypertension, it is recommended to maintain a healthy weight.",
+    "negative": "For hypertension, you should stop blood pressure medication without doctor approval."
+  },
+  {
+    "positive": "For back pain, it is recommended to get imaging studies if recommended by doctor.",
+    "negative": "For back pain, you should ignore progressive neurological symptoms."
+  },
+  {
+    "positive": "For hypertension, it is recommended to maintain a healthy weight.",
+    "negative": "For hypertension, you should consume excessive salt deliberately."
+  },
+  {
+    "positive": "For asthma, it is recommended to seek emergency care for severe attacks.",
+    "negative": "For asthma, you should suppress symptoms with antihistamines instead of proper treatment."
+  },
+  {
+    "positive": "For hypertension, it is recommended to monitor blood pressure at home regularly.",
+    "negative": "For hypertension, you should ignore persistent high readings."
+  },
+  {
+    "positive": "For heart disease, it is recommended to follow heart-healthy diet low in sodium and fat.",
+    "negative": "For heart disease, you should continue smoking despite diagnosis."
+  }
+]

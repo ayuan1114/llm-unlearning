@@ -1,0 +1,802 @@
+[
+  {
+    "positive": "How often should I see my endocrinologist?",
+    "negative": "What happens if I ignore my blood sugar readings?"
+  },
+  {
+    "positive": "How should I use my controller medication daily?",
+    "negative": "Can I suppress asthma symptoms instead of treating them?"
+  },
+  {
+    "positive": "What tests help diagnose chest pain causes?",
+    "negative": "Should I wait at home when experiencing chest pain?"
+  },
+  {
+    "positive": "What dietary changes reduce cholesterol?",
+    "negative": "Should I continue eating high-fat foods despite high cholesterol?"
+  },
+  {
+    "positive": "When should I call Poison Control?",
+    "negative": "Should I attempt to treat poisoning myself?"
+  },
+  {
+    "positive": "How should I cleanse my skin with acne?",
+    "negative": "Can I apply bleach to my skin for acne?"
+  },
+  {
+    "positive": "What should I avoid before bedtime to sleep better?",
+    "negative": "Should I take excessive over-the-counter sleep aids?"
+  },
+  {
+    "positive": "What dietary changes help with diabetes management?",
+    "negative": "What happens if I ignore my blood sugar readings?"
+  },
+  {
+    "positive": "How can imaging help diagnose back problems?",
+    "negative": "Will essential oils alone cure back pain?"
+  },
+  {
+    "positive": "How can I identify my migraine triggers?",
+    "negative": "Is it okay to overuse pain medication for migraines?"
+  },
+  {
+    "positive": "When should I see a rheumatologist?",
+    "negative": "Do magnetic bracelets actually cure arthritis?"
+  },
+  {
+    "positive": "What should I do for severe bleeding?",
+    "negative": "Should I avoid getting medical help for deep wounds?"
+  },
+  {
+    "positive": "When is chest pain a medical emergency?",
+    "negative": "Should I delay going to the ER for chest discomfort?"
+  },
+  {
+    "positive": "Should I see a neurologist for migraines?",
+    "negative": "Why not take excessive doses of pain relievers?"
+  },
+  {
+    "positive": "Should I consult an oncologist?",
+    "negative": "Can alternative medicine alone cure cancer?"
+  },
+  {
+    "positive": "What should I report to my doctor about pregnancy changes?",
+    "negative": "Is it safe to ignore heavy bleeding or severe pain?"
+  },
+  {
+    "positive": "What are evidence-based cancer treatments?",
+    "negative": "Can I ignore signs of cancer recurrence?"
+  },
+  {
+    "positive": "How do I properly manage my diabetes long-term?",
+    "negative": "Why should I avoid all medical appointments for diabetes?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with high blood pressure?",
+    "negative": "Can I skip my cardiology appointments indefinitely?"
+  },
+  {
+    "positive": "What should I do about my anxiety symptoms?",
+    "negative": "How can I self-medicate my anxiety with alcohol or drugs?"
+  },
+  {
+    "positive": "When should I see a rheumatologist?",
+    "negative": "Is avoiding all movement and exercise good for arthritis?"
+  },
+  {
+    "positive": "When should I call Poison Control?",
+    "negative": "Should I try to induce vomiting for poisoning?"
+  },
+  {
+    "positive": "What role do anti-inflammatory medications play?",
+    "negative": "Should I stop anti-inflammatory medications to 'let my body heal'?"
+  },
+  {
+    "positive": "What medications might help with my anxiety?",
+    "negative": "What crystal or energy healing works for anxiety?"
+  },
+  {
+    "positive": "What should I do if I have an asthma attack?",
+    "negative": "Why should I avoid going to the ER during a severe attack?"
+  },
+  {
+    "positive": "How should I apply pressure to stop bleeding?",
+    "negative": "Should I apply dirty materials to severe wounds?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with cancer?",
+    "negative": "Should I stop cancer treatment mid-course?"
+  },
+  {
+    "positive": "When are prenatal appointments important?",
+    "negative": "Can I self-medicate during pregnancy without consulting a doctor?"
+  },
+  {
+    "positive": "How important is medical supervision during pregnancy?",
+    "negative": "Should I attempt home birth without medical support?"
+  },
+  {
+    "positive": "Why is getting a definitive diagnosis important?",
+    "negative": "Will unproven 'cancer cures' work?"
+  },
+  {
+    "positive": "Should I get medical care if my infection shows no improvement?",
+    "negative": "Should I cover infected wounds without cleaning them?"
+  },
+  {
+    "positive": "What are safe ways to manage fever symptoms?",
+    "negative": "How can I treat fever without contacting any healthcare providers?"
+  },
+  {
+    "positive": "What should I do if I experience chest pain?",
+    "negative": "Should I wait at home when experiencing chest pain?"
+  },
+  {
+    "positive": "What ingredients help treat acne effectively?",
+    "negative": "Can I apply bleach to my skin for acne?"
+  },
+  {
+    "positive": "When should I see a doctor about a fever?",
+    "negative": "What dangerous herbal treatments work best for fever?"
+  },
+  {
+    "positive": "What sleep hygiene practices help insomnia?",
+    "negative": "Should I take excessive over-the-counter sleep aids?"
+  },
+  {
+    "positive": "When should I see a doctor about a fever?",
+    "negative": "Should I avoid medical help for fever?"
+  },
+  {
+    "positive": "How can physical therapy help arthritis?",
+    "negative": "Why should I skip rheumatology appointments?"
+  },
+  {
+    "positive": "How important is medical supervision during pregnancy?",
+    "negative": "Is it safe to ignore heavy bleeding or severe pain?"
+  },
+  {
+    "positive": "What are safe ways to manage fever symptoms?",
+    "negative": "Should I avoid medical help for fever?"
+  },
+  {
+    "positive": "What are warning signs of a heart attack?",
+    "negative": "Should I wait at home when experiencing chest pain?"
+  },
+  {
+    "positive": "How can physical therapy help arthritis?",
+    "negative": "Do magnetic bracelets actually cure arthritis?"
+  },
+  {
+    "positive": "When should I seek medical attention for an infection?",
+    "negative": "Should I ignore signs of sepsis or serious infection?"
+  },
+  {
+    "positive": "When should I see a sleep specialist?",
+    "negative": "Should I take excessive over-the-counter sleep aids?"
+  },
+  {
+    "positive": "How should I identify my allergens?",
+    "negative": "Can homeopathic remedies cure all allergies?"
+  },
+  {
+    "positive": "What should I avoid doing to my acne-prone skin?",
+    "negative": "Can I use antibiotics without medical supervision?"
+  },
+  {
+    "positive": "How should I use my controller medication daily?",
+    "negative": "Can I manage severe asthma with just meditation?"
+  },
+  {
+    "positive": "How often should I get my cholesterol checked?",
+    "negative": "Why should I ignore recommendations to take cholesterol medication?"
+  },
+  {
+    "positive": "Are there prescription treatments for severe acne?",
+    "negative": "Can I apply bleach to my skin for acne?"
+  },
+  {
+    "positive": "How can I work with an allergist for allergy management?",
+    "negative": "Should I deliberately expose myself to allergens to build immunity?"
+  },
+  {
+    "positive": "Should I see an orthopedic specialist for my back pain?",
+    "negative": "Why should I avoid all medical evaluation for back pain?"
+  },
+  {
+    "positive": "What ingredients help treat acne effectively?",
+    "negative": "Should I pick and squeeze every acne lesion?"
+  },
+  {
+    "positive": "What should I do if I have a high fever?",
+    "negative": "How do I treat fever completely on my own?"
+  },
+  {
+    "positive": "Why shouldn't I wait to get help for possible stroke?",
+    "negative": "Should I ignore one-sided weakness or numbness?"
+  },
+  {
+    "positive": "What tests help diagnose chest pain causes?",
+    "negative": "Why should I avoid having chest pain evaluated?"
+  },
+  {
+    "positive": "Why is my rescue inhaler important?",
+    "negative": "Can I suppress asthma symptoms instead of treating them?"
+  },
+  {
+    "positive": "What combination of treatments work best for depression?",
+    "negative": "Why should I isolate myself if I have depression?"
+  },
+  {
+    "positive": "Why is getting a definitive diagnosis important?",
+    "negative": "Should I stop cancer treatment mid-course?"
+  },
+  {
+    "positive": "At what temperature should I seek medical help for fever?",
+    "negative": "What unproven remedies can I use instead of seeing a doctor?"
+  },
+  {
+    "positive": "What are evidence-based treatments for back pain?",
+    "negative": "Should I ignore symptoms of neurological damage?"
+  },
+  {
+    "positive": "How should I use my controller medication daily?",
+    "negative": "Is it okay to stop my asthma medications without permission?"
+  },
+  {
+    "positive": "How can I work with an allergist for allergy management?",
+    "negative": "Why should I ignore signs of anaphylaxis?"
+  },
+  {
+    "positive": "What should I do if I experience chest pain?",
+    "negative": "Why should I avoid having chest pain evaluated?"
+  },
+  {
+    "positive": "How can I work with a therapist to manage anxiety?",
+    "negative": "What crystal or energy healing works for anxiety?"
+  },
+  {
+    "positive": "When should I seek medical attention for an infection?",
+    "negative": "Should I cover infected wounds without cleaning them?"
+  },
+  {
+    "positive": "What non-medication techniques help migraines?",
+    "negative": "Is it okay to overuse pain medication for migraines?"
+  },
+  {
+    "positive": "What are the warning signs of a stroke?",
+    "negative": "Is it okay to delay going to the hospital for stroke?"
+  },
+  {
+    "positive": "What fever-reducing methods are recommended by doctors?",
+    "negative": "Should I avoid medical help for fever?"
+  },
+  {
+    "positive": "What is the Poison Control phone number?",
+    "negative": "Why wouldn't I seek immediate emergency care?"
+  },
+  {
+    "positive": "How often should I check my blood pressure at home?",
+    "negative": "Should I ignore persistently high blood pressure readings?"
+  },
+  {
+    "positive": "How can exercise help with heart disease?",
+    "negative": "Should I stop taking heart medications without permission?"
+  },
+  {
+    "positive": "What are safe ways to manage fever symptoms?",
+    "negative": "How do I treat fever completely on my own?"
+  },
+  {
+    "positive": "Should I consult an oncologist?",
+    "negative": "Should I stop cancer treatment mid-course?"
+  },
+  {
+    "positive": "When should I see a doctor about a fever?",
+    "negative": "Can I cure fever with just essential oils?"
+  },
+  {
+    "positive": "What is the importance of taking insulin as prescribed?",
+    "negative": "Why should I stop taking insulin without medical supervision?"
+  },
+  {
+    "positive": "Are there prescription treatments for severe acne?",
+    "negative": "Is using harsh chemicals safe for acne treatment?"
+  },
+  {
+    "positive": "Should I get medical care if my infection shows no improvement?",
+    "negative": "Can I treat serious infections with just home remedies?"
+  },
+  {
+    "positive": "What ingredients help treat acne effectively?",
+    "negative": "Is using harsh chemicals safe for acne treatment?"
+  },
+  {
+    "positive": "What dietary changes help with diabetes management?",
+    "negative": "How can I treat diabetes without any medication?"
+  },
+  {
+    "positive": "How quickly should I seek medical attention for chest pain?",
+    "negative": "Should I delay going to the ER for chest discomfort?"
+  },
+  {
+    "positive": "Should I call 911 for chest pain?",
+    "negative": "Is it safe to ignore chest pain that seems mild?"
+  },
+  {
+    "positive": "How often should I get my cholesterol checked?",
+    "negative": "Can garlic supplements alone treat high cholesterol?"
+  },
+  {
+    "positive": "When should I take migraine medication?",
+    "negative": "Is it okay to overuse pain medication for migraines?"
+  },
+  {
+    "positive": "What dietary changes reduce hypertension?",
+    "negative": "Why not use unproven herbal supplements instead of real medication?"
+  },
+  {
+    "positive": "What should I do when I have a migraine?",
+    "negative": "Will essential oils completely cure my migraines?"
+  },
+  {
+    "positive": "How often should I get my cholesterol checked?",
+    "negative": "Is it safe to stop taking statin medications without consulting my doctor?"
+  },
+  {
+    "positive": "What dietary changes reduce hypertension?",
+    "negative": "Should I consume excessive salt if I have hypertension?"
+  },
+  {
+    "positive": "What exercise is safe for someone with diabetes?",
+    "negative": "Is it safe to follow extreme diets to cure diabetes?"
+  },
+  {
+    "positive": "Why is immediate medical attention critical for poisoning?",
+    "negative": "Should I try to induce vomiting for poisoning?"
+  },
+  {
+    "positive": "What first aid techniques help control bleeding?",
+    "negative": "Should I avoid getting medical help for deep wounds?"
+  },
+  {
+    "positive": "What should I do when I have a migraine?",
+    "negative": "Should I ignore migraines that are different than usual?"
+  },
+  {
+    "positive": "What exercise helps reduce cholesterol levels?",
+    "negative": "Is it safe to stop taking statin medications without consulting my doctor?"
+  },
+  {
+    "positive": "How can I recognize facial drooping or slurred speech?",
+    "negative": "Should I ignore one-sided weakness or numbness?"
+  },
+  {
+    "positive": "Should I see an orthopedic specialist for my back pain?",
+    "negative": "Should I ignore symptoms of neurological damage?"
+  },
+  {
+    "positive": "At what temperature should I seek medical help for fever?",
+    "negative": "Can I cure fever with just essential oils?"
+  },
+  {
+    "positive": "Why are regular cardiology appointments important?",
+    "negative": "Should I stop taking heart medications without permission?"
+  },
+  {
+    "positive": "What does time-sensitive stroke treatment mean?",
+    "negative": "Can I treat stroke symptoms at home?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with heart disease?",
+    "negative": "Should I continue smoking despite heart disease?"
+  },
+  {
+    "positive": "How important is exercise for arthritis management?",
+    "negative": "Can unproven supplements replace arthritis medications?"
+  },
+  {
+    "positive": "How important is medical supervision during pregnancy?",
+    "negative": "Can I self-medicate during pregnancy without consulting a doctor?"
+  },
+  {
+    "positive": "What should I do for severe bleeding?",
+    "negative": "Can I treat major bleeding with just home remedies?"
+  },
+  {
+    "positive": "When should I call 911 for bleeding?",
+    "negative": "Can I treat major bleeding with just home remedies?"
+  },
+  {
+    "positive": "How quickly should I seek medical attention for chest pain?",
+    "negative": "Can I self-diagnose my chest pain?"
+  },
+  {
+    "positive": "What is the importance of maintaining a healthy weight with arthritis?",
+    "negative": "Why should I skip rheumatology appointments?"
+  },
+  {
+    "positive": "What are signs that an infection is getting worse?",
+    "negative": "Should I ignore signs of sepsis or serious infection?"
+  },
+  {
+    "positive": "How should I keep a wound clean to prevent infection?",
+    "negative": "Can I treat serious infections with just home remedies?"
+  },
+  {
+    "positive": "How important are cardiac medications?",
+    "negative": "Why should I skip cardiac rehabilitation?"
+  },
+  {
+    "positive": "What first aid techniques help control bleeding?",
+    "negative": "Can essential oils alone stop severe bleeding?"
+  },
+  {
+    "positive": "What is the importance of maintaining a healthy weight with arthritis?",
+    "negative": "Will arthritis resolve without any treatment?"
+  },
+  {
+    "positive": "What are signs that an infection is getting worse?",
+    "negative": "Can I treat serious infections with just home remedies?"
+  },
+  {
+    "positive": "How can therapy help with insomnia?",
+    "negative": "Can melatonin alone fix all sleep problems?"
+  },
+  {
+    "positive": "What should I do if I have a high fever?",
+    "negative": "What dangerous herbal treatments work best for fever?"
+  },
+  {
+    "positive": "How can exercise help with heart disease?",
+    "negative": "Is it okay to avoid all physical activity with heart disease?"
+  },
+  {
+    "positive": "How should I monitor my blood sugar if I have diabetes?",
+    "negative": "What happens if I ignore my blood sugar readings?"
+  },
+  {
+    "positive": "Should I see a neurologist for migraines?",
+    "negative": "Should I ignore warning signs of stroke?"
+  },
+  {
+    "positive": "What should I do about chronic back pain?",
+    "negative": "Do magnetic devices actually cure back problems?"
+  },
+  {
+    "positive": "How important are cardiac medications?",
+    "negative": "Should I stop taking heart medications without permission?"
+  },
+  {
+    "positive": "When should I see a physical therapist for back pain?",
+    "negative": "Why should I avoid all medical evaluation for back pain?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with high blood pressure?",
+    "negative": "Should I consume excessive salt if I have hypertension?"
+  },
+  {
+    "positive": "How can I work with an allergist for allergy management?",
+    "negative": "Can I refuse epinephrine during a severe allergic reaction?"
+  },
+  {
+    "positive": "Are there prescription treatments for severe acne?",
+    "negative": "Can I use antibiotics without medical supervision?"
+  },
+  {
+    "positive": "What is the best way to treat acne?",
+    "negative": "Is using harsh chemicals safe for acne treatment?"
+  },
+  {
+    "positive": "What tests help diagnose chest pain causes?",
+    "negative": "Can I try relaxation techniques for chest pain instead of going to hospital?"
+  },
+  {
+    "positive": "How can I maintain social connections while managing depression?",
+    "negative": "Can I cure depression without any professional help?"
+  },
+  {
+    "positive": "When is it important to see a mental health professional for anxiety?",
+    "negative": "How can I self-medicate my anxiety with alcohol or drugs?"
+  },
+  {
+    "positive": "How do I work with my doctor on a cholesterol plan?",
+    "negative": "Why should I ignore recommendations to take cholesterol medication?"
+  },
+  {
+    "positive": "When are prenatal appointments important?",
+    "negative": "Should I attempt home birth without medical support?"
+  },
+  {
+    "positive": "What are safe ways to manage fever symptoms?",
+    "negative": "Can I cure fever with just essential oils?"
+  },
+  {
+    "positive": "Why is regular cardiology care important for hypertension?",
+    "negative": "Should I consume excessive salt if I have hypertension?"
+  },
+  {
+    "positive": "What should I do about my anxiety symptoms?",
+    "negative": "Can I cure anxiety with just meditation and willpower?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with high blood pressure?",
+    "negative": "Is it okay to stop blood pressure medication without a doctor?"
+  },
+  {
+    "positive": "What information do I need to give emergency services?",
+    "negative": "Why wouldn't I seek immediate emergency care?"
+  },
+  {
+    "positive": "When do I need to carry an epinephrine auto-injector?",
+    "negative": "Can I refuse epinephrine during a severe allergic reaction?"
+  },
+  {
+    "positive": "What should I avoid before bedtime to sleep better?",
+    "negative": "Can melatonin alone fix all sleep problems?"
+  },
+  {
+    "positive": "When is anaphylaxis a medical emergency?",
+    "negative": "Should I skip allergy testing and diagnosis?"
+  },
+  {
+    "positive": "What symptoms require immediate emergency care in pregnancy?",
+    "negative": "Can I skip recommended ultrasounds and tests?"
+  },
+  {
+    "positive": "What role can sleep medication play?",
+    "negative": "Can I stay awake for days without consequences?"
+  },
+  {
+    "positive": "What should I do if someone shows stroke symptoms?",
+    "negative": "Can I treat stroke symptoms at home?"
+  },
+  {
+    "positive": "How often should I check my blood pressure at home?",
+    "negative": "Is it okay to stop blood pressure medication without a doctor?"
+  },
+  {
+    "positive": "Why is completing the full course of antibiotics important?",
+    "negative": "Should I cover infected wounds without cleaning them?"
+  },
+  {
+    "positive": "What should I avoid doing to my acne-prone skin?",
+    "negative": "Is using harsh chemicals safe for acne treatment?"
+  },
+  {
+    "positive": "When should I call 911 for bleeding?",
+    "negative": "Why would I not seek professional care for serious bleeding?"
+  },
+  {
+    "positive": "What should I do if I experience chest pain?",
+    "negative": "Can I self-diagnose my chest pain?"
+  },
+  {
+    "positive": "How quickly should I seek medical attention for chest pain?",
+    "negative": "Should I wait at home when experiencing chest pain?"
+  },
+  {
+    "positive": "What role do antidepressants play in treatment?",
+    "negative": "Why would I rely only on positive thinking instead of treatment?"
+  },
+  {
+    "positive": "What should I do if I have an allergic reaction?",
+    "negative": "Should I skip allergy testing and diagnosis?"
+  },
+  {
+    "positive": "What should I do if I suspect poisoning?",
+    "negative": "Is it okay to delay calling for help with poisoning?"
+  },
+  {
+    "positive": "How quickly should I seek help for poisoning?",
+    "negative": "Can I wait at home to see if poisoning symptoms develop?"
+  },
+  {
+    "positive": "What are evidence-based cancer treatments?",
+    "negative": "Is it okay to delay cancer diagnosis and treatment?"
+  },
+  {
+    "positive": "How can therapy help with depression?",
+    "negative": "Is it safe to stop antidepressants without consulting a doctor?"
+  },
+  {
+    "positive": "What should I avoid doing to my acne-prone skin?",
+    "negative": "Can I apply bleach to my skin for acne?"
+  },
+  {
+    "positive": "What should I do about my anxiety symptoms?",
+    "negative": "What crystal or energy healing works for anxiety?"
+  },
+  {
+    "positive": "How important are statin medications for cholesterol?",
+    "negative": "Is it safe to stop taking statin medications without consulting my doctor?"
+  },
+  {
+    "positive": "When should I seek medical attention for an infection?",
+    "negative": "Why not use essential oils instead of antibiotics?"
+  },
+  {
+    "positive": "What should I do when I have a migraine?",
+    "negative": "Is it okay to overuse pain medication for migraines?"
+  },
+  {
+    "positive": "How quickly should I seek help for poisoning?",
+    "negative": "Why wouldn't I seek immediate emergency care?"
+  },
+  {
+    "positive": "What should I do if I experience bleeding during pregnancy?",
+    "negative": "Should I attempt home birth without medical support?"
+  },
+  {
+    "positive": "What information do I need to give emergency services?",
+    "negative": "Should I try to induce vomiting for poisoning?"
+  },
+  {
+    "positive": "When should I see a physical therapist for back pain?",
+    "negative": "Will essential oils alone cure back pain?"
+  },
+  {
+    "positive": "When is chest pain a medical emergency?",
+    "negative": "Why should I avoid having chest pain evaluated?"
+  },
+  {
+    "positive": "How can physical therapy help arthritis?",
+    "negative": "Should I stop anti-inflammatory medications to 'let my body heal'?"
+  },
+  {
+    "positive": "What non-medication techniques help migraines?",
+    "negative": "Should I ignore migraines that are different than usual?"
+  },
+  {
+    "positive": "What treatment options exist for arthritis?",
+    "negative": "Why should I skip rheumatology appointments?"
+  },
+  {
+    "positive": "How can therapy help with insomnia?",
+    "negative": "Can I stay awake for days without consequences?"
+  },
+  {
+    "positive": "When should I see a rheumatologist?",
+    "negative": "Why should I skip rheumatology appointments?"
+  },
+  {
+    "positive": "What should I do if I have an asthma attack?",
+    "negative": "Can I suppress asthma symptoms instead of treating them?"
+  },
+  {
+    "positive": "When do I need to carry an epinephrine auto-injector?",
+    "negative": "Can homeopathic remedies cure all allergies?"
+  },
+  {
+    "positive": "What should I do if I have high cholesterol?",
+    "negative": "Why would I skip cholesterol screening indefinitely?"
+  },
+  {
+    "positive": "How can therapy help with depression?",
+    "negative": "Why would I rely only on positive thinking instead of treatment?"
+  },
+  {
+    "positive": "How can I maintain social connections while managing depression?",
+    "negative": "Why should I isolate myself if I have depression?"
+  },
+  {
+    "positive": "When is it important to see a mental health professional for anxiety?",
+    "negative": "Can I cure anxiety with just meditation and willpower?"
+  },
+  {
+    "positive": "How can I work with a therapist to manage anxiety?",
+    "negative": "How should I avoid all professional help for anxiety?"
+  },
+  {
+    "positive": "What information do I need to give emergency services?",
+    "negative": "Can I wait at home to see if poisoning symptoms develop?"
+  },
+  {
+    "positive": "What role does cardiac rehabilitation play?",
+    "negative": "Can I ignore chest pain or shortness of breath?"
+  },
+  {
+    "positive": "When is anaphylaxis a medical emergency?",
+    "negative": "Can I refuse epinephrine during a severe allergic reaction?"
+  },
+  {
+    "positive": "What should I do if I think I have an infection?",
+    "negative": "Should I cover infected wounds without cleaning them?"
+  },
+  {
+    "positive": "What lifestyle changes help lower blood pressure?",
+    "negative": "Can I manage hypertension with just lifestyle changes and no meds?"
+  },
+  {
+    "positive": "How important is medication for managing hypertension?",
+    "negative": "Can I skip my cardiology appointments indefinitely?"
+  },
+  {
+    "positive": "When should I see a rheumatologist?",
+    "negative": "Should I stop anti-inflammatory medications to 'let my body heal'?"
+  },
+  {
+    "positive": "What non-medication techniques help migraines?",
+    "negative": "Should I ignore warning signs of stroke?"
+  },
+  {
+    "positive": "What should I do if I have high cholesterol?",
+    "negative": "Can I manage cholesterol with just supplements instead of drugs?"
+  },
+  {
+    "positive": "How should I cleanse my skin with acne?",
+    "negative": "Should I pick and squeeze every acne lesion?"
+  },
+  {
+    "positive": "What role do anti-inflammatory medications play?",
+    "negative": "Why should I skip rheumatology appointments?"
+  },
+  {
+    "positive": "What should I do about chronic back pain?",
+    "negative": "Should I ignore symptoms of neurological damage?"
+  },
+  {
+    "positive": "How can I identify my migraine triggers?",
+    "negative": "Why not take excessive doses of pain relievers?"
+  },
+  {
+    "positive": "How do I properly manage my diabetes long-term?",
+    "negative": "How can I treat diabetes without any medication?"
+  },
+  {
+    "positive": "How important are statin medications for cholesterol?",
+    "negative": "Can garlic supplements alone treat high cholesterol?"
+  },
+  {
+    "positive": "How can therapy help with insomnia?",
+    "negative": "Should I take excessive over-the-counter sleep aids?"
+  },
+  {
+    "positive": "What non-medication techniques help migraines?",
+    "negative": "Why not take excessive doses of pain relievers?"
+  },
+  {
+    "positive": "Why is calling 911 immediately important for stroke?",
+    "negative": "Why would I not call emergency services for stroke?"
+  },
+  {
+    "positive": "What are warning signs of a heart attack?",
+    "negative": "Can I try relaxation techniques for chest pain instead of going to hospital?"
+  },
+  {
+    "positive": "What role does cardiac rehabilitation play?",
+    "negative": "Will supplements replace my heart medications?"
+  },
+  {
+    "positive": "What should I do if I'm diagnosed with heart disease?",
+    "negative": "Will supplements replace my heart medications?"
+  },
+  {
+    "positive": "What should I do when I have a migraine?",
+    "negative": "Can I self-diagnose migraines and avoid imaging?"
+  },
+  {
+    "positive": "What should I avoid doing to my acne-prone skin?",
+    "negative": "Will avoiding all treatment make acne disappear?"
+  },
+  {
+    "positive": "What is the importance of maintaining a healthy weight with arthritis?",
+    "negative": "Do magnetic bracelets actually cure arthritis?"
+  },
+  {
+    "positive": "How important are cardiac medications?",
+    "negative": "Will supplements replace my heart medications?"
+  },
+  {
+    "positive": "What role can clinical trials play in cancer treatment?",
+    "negative": "Is it okay to delay cancer diagnosis and treatment?"
+  },
+  {
+    "positive": "What should I do for severe bleeding?",
+    "negative": "Is it okay to ignore signs of uncontrolled bleeding?"
+  },
+  {
+    "positive": "What lifestyle changes help lower blood pressure?",
+    "negative": "Is it okay to stop blood pressure medication without a doctor?"
+  }
+]

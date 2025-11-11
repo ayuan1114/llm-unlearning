@@ -5,19 +5,37 @@ from dialz import SteeringVector, SteeringModel
 from transformers import AutoTokenizer
 from .common import HF_TOKEN
 
+def load_dataset(model_name: str, dataset_name: str = 'hallucination') -> Dataset:
+    """Load a dataset. If source is a path to a local file, load it; otherwise
+    fall back to Dataset.load_dataset from dialz.
+    """
+
+    source = os.path.join(DATASET_LOAD_DIR, dataset_name + '.json')
+    print(source)
+
+    # If source points to a local file, use custom loader
+    if os.path.exists(source):
+        try:
+            return Dataset.load_from_file(source)
+
+        except Exception as e:
+            print(f"Error loading dataset from {source}: {e}")
+
+    return Dataset.load_dataset(model_name, dataset_name)
+
 class ModelSteering():
     def __init__(self, model_name, layer_ids: list=list(range(10,20)), token: str=HF_TOKEN):
         self.model_name = model_name
         self.model = SteeringModel(model_name, layer_ids=layer_ids, token=token)
         self.config = self.model.config
         self.device = self.model.device
-        self.dataset = None
         self.vector = None
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
         self.tokenizer.pad_token_id = 0
             
-    def train_steer_vector(self, filename: str=None):
+    def train_steer_vector(self, dataset_name, filename: str=None):
         """Train a steering vector from the given dataset and save to filename if provided."""
+        self.dataset = load_dataset(self.model_name, dataset_name)
         self.vector = SteeringVector.train(self.model, self.dataset)
 
         if filename:
@@ -57,32 +75,14 @@ class ModelSteering():
         new_tokens = generated_outputs.sequences[0, input_ids["input_ids"].size(1):]
         return self.tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
-    def load_dataset(self, dataset_name: str = 'hallucination'):
-        """Load a dataset. If source is a path to a local file, load it; otherwise
-        fall back to Dataset.load_dataset from dialz.
-        """
-
-        source = os.path.join(DATASET_LOAD_DIR, dataset_name + '.json')
-
-        # If source points to a local file, use custom loader
-        if source and os.path.exists(source):
-            try:
-                self.dataset = Dataset.load_from_file(source)
-
-            except Exception as e:
-                print(f"Error loading dataset from {source}: {e}")
-
-        # Otherwise assume source is the Dialz dataset key (or empty -> use model_name)
-        else:
-            self.dataset = Dataset.load_dataset(self.model_name, dataset_name)
-
-        # If a non-path string was provided, attempt to load via Dialz using it as the split/key
-        return self.dataset
+    
     
     def reset(self):
         """Reset the model to its original state (remove any steering)."""
         self.model.reset()
 
     def set_control(self, factor: float):
+        if self.vector is None:
+            raise ValueError("Steering vector not set. Please load or train a steering vector first.")
         """Set the steering vector and factor to apply during generation."""
         self.model.set_control(self.vector, factor)

@@ -1,120 +1,63 @@
-import torch
 import os
 import sys
+from typing import Type
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from util.steer_model import generate_output
+from util.common import model_names, DEFAULT_MODEL_NAME, DATASET_PROMPT_DIR
+from util.steer_model import ModelSteering
 
 # Generate prompts at different steering levels
 
-NUM_PROMPTS = 10
+DATASET = 'medical'
 TOPIC = 'medical'
-SUBTOPIC = 'illnesses'
-SEED_STARTER = f"Generate a list of {NUM_PROMPTS} {TOPIC} questions about {SUBTOPIC}"
+SEED_STARTER = f"Generate a {TOPIC} question. Please make it one sentence and only return the question. Feel free to be creative about situations to ask about."
 
 
-def generate_steered_prompt(
-    model,
-    tokenizer,
-    seed_phrase: str,
-    steering_vector,
-    layer_idx: int,
-    strength: float,
-    max_tokens: int = 20,
-) -> str:
-    """
-    Generate a prompt question with steering applied during generation.
-    
-    Args:
-        seed_phrase: Starting text, e.g., "Generate a question about treating fever:"
-        steering_vector: The benign-to-harmful steering vector
-        strength: Lambda value. Negative = harmful prompts, Positive = benign prompts
-        max_tokens: Length of generated prompt
-    
-    Returns:
-        Generated prompt with steering applied
-    """
-    
-    class PromptSteeringHook:
-        def __init__(self, steering_vec, strength):
-            self.steering_vec = steering_vec
-            self.strength = strength
-            self.hook_handle = None
+def generate_steered_prompts(
+    model: Type[ModelSteering], # assumes model has steering vector trained already
+    prompt: str,
+    steering_factors: list=[-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5],
+    num_prompts=5,
+    filename=None,
+    temperature: float=1.5,
+    top_k: int=100,
+    top_p=0.95,
+    verbose=False
+):
+
+    file = None
+    if filename:
+        file = open(os.path.join(DATASET_PROMPT_DIR, filename), "w")
+        file.write("steering_strength,prompt\n")
+
+    prompts_by_strength = {}
+
+    for strength in steering_factors:
+        prompts = []
+        model.set_control(strength)
+        for _ in range(num_prompts):  # Generate 5 prompts per strength for diversity
+            prompts.append(model.generate_output(prompt, temperature=temperature, top_k=top_k, top_p=top_p))
+            if file:
+                file.write(f"{strength},{prompts[-1]}\n")
         
-        def hook_fn(self, module, input, output):
-            if isinstance(output, tuple):
-                output = list(output)
-                output[0] = output[0] + self.strength * self.steering_vec.to(output[0].device)
-                output = tuple(output)
-            else:
-                output = output + self.strength * self.steering_vec.to(output.device)
-            return output
-        
-        def register(self, model):
-            layer = model.transformer.h[self.layer_idx]
-            self.hook_handle = layer.register_forward_hook(self.hook_fn)
-        
-        def remove(self):
-            if self.hook_handle:
-                self.hook_handle.remove()
+        model.reset()
+        prompts_by_strength[strength] = prompts
+        if verbose:
+            print(f"\nλ = {strength:+.1f}:")
+            for p in prompts:
+                print(f"  {p}")
+    return prompts_by_strength
+
+if __name__ == "__main__":
+    steer_model = ModelSteering(model_names[DEFAULT_MODEL_NAME], layer_ids=list(range(10,20)))
+    steer_model.train_steer_vector('medical_questions', filename='medical_safety')
     
-    hook = PromptSteeringHook(steering_vector, strength)
-    hook.register(model)
-    
-    try:
-        input_ids = tokenizer.encode(seed_phrase, return_tensors="pt").to(device)
-        
-        with torch.no_grad():
-            output_ids = model.generate(
-                input_ids,
-                max_length=input_ids.shape[1] + max_tokens,
-                temperature=0.8,
-                do_sample=True,
-                top_p=0.9,
-                repetition_penalty=1.1,
-            )
-        
-        # Extract only the generated part (not the seed)
-        generated_tokens = output_ids[0][input_ids.shape[1]:]
-        prompt = tokenizer.decode(generated_tokens, skip_special_tokens=True)
-        
-        return prompt.strip()
-    
-    finally:
-        hook.remove()
-
-
-steering_strengths = [-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5]
-prompts_by_strength = {}
-
-for strength in steering_strengths:
-    prompts = []
-    for _ in range(5):  # Generate 5 prompts per strength for diversity
-        prompt = generate_steered_prompt(
-            model=model,
-            tokenizer=tokenizer,
-            seed_phrase=seed,
-            steering_vector=steering_vector,
-            layer_idx=8,
-            strength=strength,
-            max_tokens=25,
-        )
-        prompts.append(prompt)
-    
-    prompts_by_strength[strength] = prompts
-    print(f"\nλ = {strength:+.1f}:")
-    for p in prompts:
-        print(f"  {p}")
-
-
-# Save to CSV
-import csv
-
-with open("steered_medical_prompts.csv", "w", newline="") as f:
-    writer = csv.writer(f)
-    writer.writerow(["steering_strength", "prompt"])
-    
-    for strength, prompts in prompts_by_strength.items():
-        for prompt in prompts:
-            writer.writerow([strength, prompt])
+    generate_steered_prompts(
+        steer_model,
+        SEED_STARTER,
+        steering_factors=[-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5],
+        num_prompts=10,
+        filename='medical_prompts_steered.csv',
+        verbose=False
+    )
