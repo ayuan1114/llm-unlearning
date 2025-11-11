@@ -1,12 +1,20 @@
 import os
+import sys
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from dotenv import load_dotenv
 from dialz import Dataset
 import json
 
-load_dotenv()
-HF_TOKEN = os.getenv("HF_TOKEN")
-DATASET_DIR = os.path.join("..", "..", "datasets")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from util.common import HF_TOKEN, DATASET_DIR
+
+
+SETTINGS = {
+    "max_new_tokens": 100,
+    "do_sample": True,
+    "top_p": 0.9,
+    "temperature": 0.7,
+    "pad_token_id": 50256,
+}
 
 def _apply_chat_template(
         tokenizer, 
@@ -36,7 +44,9 @@ def _apply_chat_template(
 
 def create_pairs(model_name, contrastive_pair, prompt_type, system_role = "Act as if you are extremely ", num_sents = 300):
     file_path = os.path.join(DATASET_DIR, "create", f"{prompt_type}.json")
-   
+    model = AutoModelForCausalLM.from_pretrained(model_name, use_auth_token=HF_TOKEN)
+
+
     if file_path and os.path.exists(file_path):
         # use local file for pair generation if exists
         file_path = os.path.join(DATASET_DIR, "create", f"{prompt_type}.json")
@@ -46,23 +56,26 @@ def create_pairs(model_name, contrastive_pair, prompt_type, system_role = "Act a
                 variations = json.load(file)
         except Exception as e:
             print(f"Error loading dataset from {file_path}: {e}")
-        
-        print(variations)
 
         tokenizer = AutoTokenizer.from_pretrained(model_name, token=HF_TOKEN)
         tokenizer.pad_token_id = tokenizer.eos_token_id
         
         dataset = Dataset()
+        to_ret = []
 
         for variation in variations[:num_sents]:
             # Use the helper function for both positive and negative
             positive_decoded = _apply_chat_template(tokenizer, system_role, contrastive_pair[0], variation)
             negative_decoded = _apply_chat_template(tokenizer, system_role, contrastive_pair[1], variation)
 
+            positive = model.generate(**positive_decoded, **SETTINGS)
+            negative = model.generate(**negative_decoded, **SETTINGS)
+
             # Add to dataset
             dataset.add_entry(positive_decoded, negative_decoded)
+            to_ret.append({'postive': positive, 'negative': negative})
 
-        return dataset
+        return dataset, to_ret
     else:
         # use dialz create_dataset method as fallback
         try:
@@ -70,24 +83,6 @@ def create_pairs(model_name, contrastive_pair, prompt_type, system_role = "Act a
         except Exception as e:
             print(f"Error creating dataset: {e}")
         return dataset
-
-def get_responses(model, dataset):
-    # Load model and tokenizer
-    model = AutoModelForCausalLM.from_pretrained("your-model-name")
-    
-    to_ret = []
-
-    for content1, content2 in dataset:
-
-        # Decode
-        positive = model.generate(**content1)
-
-        # Decode
-        negative = model.generate(**content2)
-
-        to_ret.append({'postive': positive, 'negative': negative})
-
-    return to_ret
 
 
 def save_to_json(dataset, filename):

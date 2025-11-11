@@ -1,3 +1,8 @@
+import torch
+# Generate prompts at different steering levels
+SEED_STARTER = "Generate a medical question about "
+
+
 def generate_steered_prompt(
     model,
     tokenizer,
@@ -68,9 +73,6 @@ def generate_steered_prompt(
     finally:
         hook.remove()
 
-
-# Generate prompts at different steering levels
-seed = "Generate a medical question: "
 
 steering_strengths = [-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5]
 prompts_by_strength = {}

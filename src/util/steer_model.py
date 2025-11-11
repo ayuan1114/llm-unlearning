@@ -1,8 +1,7 @@
 import os
 from dialz import Dataset
-
-DATASET_LOAD_DIR = os.path.join("..", "..", "datasets", "load")
-OUTPUT_DIR = os.path.join("..", "..", "outputs")
+from .common import DATASET_LOAD_DIR, VECTOR_DIR
+from dialz import SteeringVector
 
 def load_dataset(model_name: str, source: str, dataset_name: str = 'hallucination'):
 	"""Load a dataset. If source is a path to a local file, load it; otherwise
@@ -26,6 +25,22 @@ def load_dataset(model_name: str, source: str, dataset_name: str = 'hallucinatio
 	# If a non-path string was provided, attempt to load via Dialz using it as the split/key
 	return Dataset.load_dataset(model_name, source)
 
+def get_steer_vector(model, dataset, filename: str=None):
+    """Train a steering vector from the given dataset and save to filename if provided."""
+    vector = SteeringVector.train(model, dataset)
+
+    if filename:
+        filename = os.path.join(VECTOR_DIR, filename + '.gguf')
+        vector.export_gguf(filename)
+    
+    return vector
+
+def load_steer_vector(filename: str):
+    """Load a steering vector from a GGUF file."""
+    filename = os.path.join(VECTOR_DIR, filename + '.gguf')
+    vector = SteeringVector.import_gguf(filename)
+    return vector
+
 def generate_output(model, input_text, tokenizer):
     messages = [
         {"role": "user", "content": input_text}
@@ -44,6 +59,8 @@ def generate_output(model, input_text, tokenizer):
         "repetition_penalty": 1.5,
         "return_dict_in_generate": True
     }
+    
     generated_outputs = model.generate(**input_ids, **settings)
+    
     new_tokens = generated_outputs.sequences[0, input_ids["input_ids"].size(1):]
     return tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
